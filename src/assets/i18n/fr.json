@@ -2,27 +2,106 @@
   "GAMEVERSE_TITLE": "GameVerse",
   "HOME": {
     "BUTTON": "Accueil",
-    "TITLE": "Découvrez les meilleurs jeux",
+    "TITLE_NEWS": "Actualités principales",
+    "TITLE_GAMES": "Découvrez les meilleurs jeux",
     "DESCRIPTION": "Explorez notre sélection des 100 meilleurs jeux les mieux notés."
   },
   "GAMES": {
     "BUTTON": "Jeux",
-    "RELEASES": "Nouveaux sorties",
-    "TOP100": "Top 100 Meilleurs jeux"
-  },
-  "NEWS": {
-    "BUTTON": "Actualités"
-  },
-  "VIDEOS": {
-    "BUTTON": "Vidéos"
+    "NEWRELEASES": "Nouvelles sorties",
+    "UPCOMINGRELEASES": "Prochaines sorties",
+    "TOP100": "Top 100 des meilleurs jeux",
+    "PSPLUS": "Nouveau sur PlayStation Plus",
+    "RELEASE": "Sortie :",
+    "CONSOLES": "Plateformes :",
+    "RATING": "Note :",
+    "BUY": "Acheter maintenant",
+    "IMAGES": "Images"
   },
   "REVIEWS": {
-    "BUTTON": "Critiques",
+    "BUTTON": "Critiques et analyses",
     "LINECHART_TITLE": "Lancement mensuel des jeux vidéo par plateforme en 2023",
-    "BARCHART_TITLE": "Ventes annuelles des consoles de génération actuelle (2017 - 2024)",
-    "PIECHART_TITLE": "Temps hebdomadaire consacré aux jeux vidéo en Espagne en 2023, par appareil (en heures)"
+    "BARCHART_TITLE": "Ventes annuelles de consoles de la génération actuelle (2017 - 2024)",
+    "PIECHART_TITLE": "Temps hebdomadaire consacré aux jeux vidéo en Espagne en 2023, par appareil (en heures)",
+    "TITLE": "Critiques :",
+    "USERNAME": "Par :",
+    "ADD_REVIEW": "Ajouter une critique",
+    "USER": "Utilisateur :",
+    "USER_REQUIRED": "Votre nom d'utilisateur est requis.",
+    "GAME_TITLE": "Titre du jeu :",
+    "GAME_TITLE_REQUIRED": "Le titre du jeu est requis.",
+    "REVIEW": "Critique :",
+    "REVIEW_REQUIRED": "Votre critique est requise.",
+    "SEND": "Envoyer"
   },
   "TABLES": {
-    "BUTTON": "Tableaux"
+    "BUTTON": "Tableaux",
+    "TITLE": "Jeux phares sur",
+    "PAGE": "Page",
+    "CONNECTOR": "de",
+    "PREVIOUS_PAGE": "Précédente",
+    "NEXT_PAGE": "Suivante",
+    "EXCEL": "Exporter vers Excel"
+  },
+  "LOGIN": {
+    "TITLE": "Se connecter",
+    "ERROR_MESSAGE": "<strong>Erreur :</strong> E-mail ou mot de passe incorrect. Veuillez réessayer.",
+    "EMAIL": "E-mail",
+    "PASSWORD": "Mot de passe",
+    "REMEMBER_ME": "Se souvenir de moi",
+    "LOGIN": "Se connecter",
+    "SIGN_UP": "S'inscrire gratuitement",
+    "FORGOTTEN_PASSWORD": "Mot de passe oublié ?",
+    "LOGOUT": "Se déconnecter"
+  },
+  "REGISTER": {
+    "TITLE": "Inscrivez-vous sur GameVerse",
+    "EMAIL": "E-mail",
+    "PASSWORD": "Mot de passe",
+    "REPEAT_PASSWORD": "Répéter le mot de passe",
+    "USERNAME": "Nom d'utilisateur (lettres et chiffres uniquement)",
+    "REGISTER": "S'inscrire",
+    "SUCCESS_MESSAGE": "Merci de vous être inscrit sur GameVerse.",
+    "ERROR_MESSAGE": "<strong>Erreur :</strong> Vérifiez que les données sont au bon format et que tous les champs sont remplis.",
+    "PRE_TERMS": "En rejoignant GameVerse, vous acceptez les ",
+    "TERMS": "Conditions d'utilisation",
+    "PRE_PRIVACY": "et la",
+    "PRIVACY": "Politique de confidentialité",
+    "AFTER_PRIVACY": "de GameVerse.",
+    "ACCOUNT_PROMPT": "Vous avez déjà un compte ?",
+    "LOGIN": "Connectez-vous à GameVerse"
+  },
+  "RECOVERY": {
+    "TITLE": "Récupérer le mot de passe",
+    "ERROR_MESSAGE": "<strong>Erreur :</strong> Cet e-mail ne correspond à aucun compte enregistré sur GameVerse.",
+    "SUCCESS_MESSAGE": "Vérifiez votre e-mail et cliquez sur le lien que nous vous avons envoyé pour choisir votre nouveau mot de passe. Si vous ne trouvez pas notre message, veuillez également vérifier votre dossier <em>spam</em>.",
+    "EMAIL": "E-mail",
+    "RECOVERY_PASSWORD": "Récupérer le mot de passe",
+    "CANCEL": "Annuler"
+  },
+  "ERROR": {
+    "TITLE": "Oups ! Page non trouvée",
+    "DESCRIPTION": "La page que vous recherchez n'existe pas.",
+    "BUTTON": "Retour à l'accueil",
+    "ADMIN": "Erreur : Accès restreint",
+    "ADMIN_TITLE": "Vous devez vous connecter en tant qu'administrateur pour accéder à cette page.",
+    "ADMIN_INSTRUCTIONS": "Instructions :",
+    "ADMIN_EMAIL": "E-mail de l'administrateur :",
+    "ADMIN_PASSWORD": "Mot de passe :",
+    "ADMIN_LOGIN_EMAIL": "admin@gmail.com",
+    "ADMIN_LOGIN_PASSWORD": "admin",
+    "ADMIN_BUTTON": "Se connecter"
+  },
+  "FOOTER": {
+    "RIGHTS": "© 2024 GameVerse. Tous droits réservés.",
+    "HOME": "Accueil",
+    "CHARTS": "Graphiques de données",
+    "TERMS_OF_USE": "Conditions d'utilisation",
+    "PRIVACY_POLICY": "Politique de confidentialité",
+    "FACEBOOK": "Facebook",
+    "TWITTER": "Twitter",
+    "INSTAGRAM": "Instagram",
+    "YOUTUBE": "YouTube",
+    "GO_UP": "Haut de page"
   }
 }

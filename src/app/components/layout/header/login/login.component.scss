@@ -1,8 +1,10 @@
+// GLOBAL STYLES
 * {
   margin: 0px;
   padding: 0px;
 }
 
+// USER ICON TO LOGIN
 .user {
   cursor: pointer;
   color: white;
@@ -14,23 +16,25 @@
   color: var(--color-secondary);
 }
 
+// LOGGED-IN USER INFO
 .loggedUser {
   display: flex;
   align-items: center;
-  background-color: #2c3e50; 
+  background-color: #2c3e50;
   padding: 10px 20px;
-  border-radius: 25px; 
-  color: #ecf0f1; 
+  margin-left: 10px;
+  border-radius: 25px;
+  color: #ecf0f1;
 }
 
 .loggedUser span {
   margin-right: 15px;
   font-weight: bold;
-  font-size: 20px; 
+  font-size: 20px;
 }
 
 .loggedUser span::before {
-  content: '\f007'; 
+  content: "\f007";
   font-family: "Font Awesome 5 Free";
   margin-right: 8px;
 }
@@ -45,14 +49,15 @@
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logout:hover {
   background-color: #c0392b;
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
+// MODAL CONTAINER
 .popUp {
   position: fixed;
   left: 50%;
@@ -67,6 +72,7 @@
   z-index: 1000;
 }
 
+// FADE-IN ANIMATION FOR MODALS
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -92,6 +98,7 @@
   font-weight: bold;
 }
 
+// CLOSE BUTTON FOR MODALS
 .closeBtn {
   position: absolute;
   top: 50%;
@@ -104,11 +111,13 @@
   font-size: 20px;
 }
 
+// ALERT MESSAGES
 .alert {
   padding: 12px;
   margin-bottom: 15px;
 }
 
+//FORMS
 .formElement {
   margin: 15px 0px;
 }
@@ -242,12 +251,12 @@ input[type="checkbox"] {
   border-color: var(--color-base);
 }
 
-.recoveryContainer{
+.recoveryContainer {
   display: flex;
   justify-content: space-between;
 }
 
-.recovery{
+.recovery {
   width: 55%;
   height: 40px;
   border: none;
@@ -263,11 +272,12 @@ input[type="checkbox"] {
   background-color: #3a5ba0;
 }
 
-.cancel{
+.cancel {
   background: none;
   border: none;
 }
 
+// DARK OVERLAY WHEN A MODAL IS OPEN
 .overlay {
   position: fixed;
   top: 0;

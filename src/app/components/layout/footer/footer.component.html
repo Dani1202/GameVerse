@@ -2,62 +2,60 @@
 <footer class="footer">
   <div class="container">
     <div class="row">
+      <!-- First Column - Copyright Information -->
       <div class="col-md-3">
-        <div class="logo">
-          <p class="textColor">
-            © 2024 GameVerse. Todos los derechos reservados.
-          </p>
-        </div>
+        <p class="textColor">{{ 'FOOTER.RIGHTS' | i18next }}</p>
       </div>
 
+      <!-- Second Column - Links to Different Pages -->
       <div class="col-md-3">
-        <div class="links">
-          <ul>
-            <li>
-              <a class="textColor" routerLink="">{{ home }}</a>
-            </li>
-            <li>
-              <a class="textColor" routerLink="">{{ consoles }}</a>
-            </li>
-            <li>
-              <a class="textColor" routerLink="">{{ top100 }}</a>
-            </li>
-            <li>
-              <a class="textColor" routerLink="">{{ contact }}</a>
-            </li>
-          </ul>
-        </div>
+        <ul>
+          <li>
+            <a class="textColor" routerLink="">{{ 'FOOTER.HOME' | i18next }}</a>
+          </li>
+          <li>
+            <a class="textColor" routerLink="/reviews">{{ 'FOOTER.CHARTS' | i18next }}</a>
+          </li>
+          <li>
+            <a class="textColor" routerLink="">{{ 'FOOTER.TERMS_OF_USE' | i18next }}</a>
+          </li>
+          <li>
+            <a class="textColor" routerLink="">{{ 'FOOTER.PRIVACY_POLICY' | i18next }}</a>
+          </li>
+        </ul>
       </div>
 
+      <!-- Third Column - Social Media Links -->
       <div class="col-md-3">
-        <div class="socialMedia">
-          <ul>
-            <li>
-              <a class="textColor" href="https://es-es.facebook.com/" target="_blank"><i
-                  class="fab fa-facebook fa-lg"></i> {{ facebook }}</a>
-            </li>
-            <li>
-              <a class="textColor" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-lg"></i> {{
-                twitter }}</a>
-            </li>
-            <li>
-              <a class="textColor" href="https://www.instagram.com/" target="_blank"><i
-                  class="fab fa-instagram fa-lg"></i> {{ instagram }}</a>
-            </li>
-            <li>
-              <a class="textColor" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube fa-lg"></i>
-                {{ youtube }}</a>
-            </li>
-          </ul>
-        </div>
+        <ul>
+          <li>
+            <a class="textColor" href="https://es-es.facebook.com/" target="_blank">
+              <i class="fab fa-facebook fa-lg"></i> {{ 'FOOTER.FACEBOOK' | i18next }}
+            </a>
+          </li>
+          <li>
+            <a class="textColor" href="https://twitter.com/" target="_blank">
+              <i class="fab fa-twitter fa-lg"></i> {{ 'FOOTER.TWITTER' | i18next }}
+            </a>
+          </li>
+          <li>
+            <a class="textColor" href="https://www.instagram.com/" target="_blank">
+              <i class="fab fa-instagram fa-lg"></i> {{ 'FOOTER.INSTAGRAM' | i18next }}
+            </a>
+          </li>
+          <li>
+            <a class="textColor" href="https://www.youtube.com/" target="_blank">
+              <i class="fab fa-youtube fa-lg"></i> {{ 'FOOTER.YOUTUBE' | i18next }}
+            </a>
+          </li>
+        </ul>
       </div>
 
+      <!-- Fourth Column - Button to Scroll to Top -->
       <div class="col-md-3">
-        <div class="scroll-to-top">
-          <a href="#" class="btn btn-lg">
-            <span><i class="fa fa-arrow-up"></i></span> Ir arriba
-          </a>
-        </div>
+        <button class="btn btn-lg textColor" (click)="scrollToTop()">
+          <i class="fa fa-arrow-up"></i> {{ 'FOOTER.GO_UP' | i18next }}
+        </button>
       </div>
     </div>
   </div>

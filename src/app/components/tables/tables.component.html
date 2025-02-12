@@ -1,15 +1,21 @@
+<!--TABLES-->
 <div class="tableContainer" [ngClass]="getTableClass(year)" *ngFor="let year of years">
-  <h2 class="tableTitle">Juegos Destacados en {{ year }}</h2>
-  
+  <h2 class="tableTitle">{{ 'TABLES.TITLE' | i18next }} {{ year }}</h2>
+
+  <!-- Filters for the tables -->
   <div class="filtersContainer">
     <div *ngFor="let filter of filters" class="dropdown" (click)="toggleDropdown(filter.key, year)"
       [ngClass]="{'selected': isDropdownOpen(filter.key, year)}">
+      <!-- Currently selected filter value-->
       <div class="dropdownHeader">
-        {{ selectedFilter[year][filter.key] === '' || selectedFilter[year][filter.key] === 'Todos' || selectedFilter[year][filter.key] === 'Todas' ? filter.label : selectedFilter[year][filter.key] }}
+        {{ selectedFilter[year][filter.key] === '' || selectedFilter[year][filter.key] === 'Todos' ||
+        selectedFilter[year][filter.key] === 'Todas' ? filter.label : selectedFilter[year][filter.key] }}
       </div>
+      <!-- Dropdown content with filter options -->
       <div class="dropdownContent" [ngClass]="getDropdownClasses(filter, year)">
         <ul class="ulItem">
-          <li class="liItem" *ngFor="let option of filter.options" (click)="selectFilter(filter.key, option, $event, year)">
+          <li class="liItem" *ngFor="let option of filter.options"
+            (click)="selectFilter(filter.key, option, $event, year)">
             <a [ngClass]="{'selected': selectedFilter[year][filter.key] === option}">{{ option }}</a>
           </li>
         </ul>
@@ -17,6 +23,7 @@
     </div>
   </div>
 
+  <!-- Table displaying games data -->
   <table [id]="'gamesTable' + year">
     <thead>
       <tr>
@@ -44,11 +51,14 @@
     </div>
 
     <div class="paginationControls">
-      <button (click)="changePage(year, currentPage[year] - 1)" [disabled]="currentPage[year] === 1">Anterior</button>
-      <span>Página {{ currentPage[year] }} de {{ totalPages[year] }}</span>
-      <button (click)="changePage(year, currentPage[year] + 1)" [disabled]="currentPage[year] === totalPages[year]">Siguiente</button>
+      <button (click)="changePage(year, currentPage[year] - 1)" [disabled]="currentPage[year] === 1">{{
+        'TABLES.PREVIOUS_PAGE' | i18next }}</button>
+      <span>{{ 'TABLES.PAGE' | i18next }} {{ currentPage[year] }} {{ 'TABLES.CONNECTOR' | i18next }} {{ totalPages[year]
+        }}</span>
+      <button (click)="changePage(year, currentPage[year] + 1)" [disabled]="currentPage[year] === totalPages[year]">{{
+        'TABLES.NEXT_PAGE' | i18next }}</button>
     </div>
   </div>
 
-  <button class="excel" (click)="exportToExcel('gamesTable' + year)">Exportar a Excel</button>
+  <button class="excel" (click)="exportToExcel('gamesTable' + year)">{{ 'TABLES.EXCEL' | i18next }}</button>
 </div>

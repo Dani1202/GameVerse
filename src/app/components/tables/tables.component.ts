@@ -64,6 +64,7 @@ export class TablesComponent implements OnInit {
     this.initializeTables();
   }
 
+  // Method to initialize game data for each year from the service
   initializeTables() {
     this.tablesService.getGames2024().subscribe(data => {
       this.games['2024'] = data.games;
@@ -98,6 +99,7 @@ export class TablesComponent implements OnInit {
   toggleDropdown(dropdown: string, year: string) {
     this.dropdownStates[year][dropdown] = !this.dropdownStates[year][dropdown];
 
+    // Close all other dropdowns
     Object.keys(this.dropdownStates[year]).forEach(key => {
       if (key !== dropdown) {
         this.dropdownStates[year][key] = false;
@@ -164,6 +166,7 @@ export class TablesComponent implements OnInit {
     return selectedMonth === 'Todos' || releaseDate === selectedMonth;
   }
 
+  // Toggle the visibility of columns
   toggleColumn(column: string, year: string) {
     const allCols = this.allColumns[year];
     let visibleCols = this.visibleColumns[year];
@@ -199,6 +202,7 @@ export class TablesComponent implements OnInit {
     XLSX.writeFile(wb, 'juegos_destacados.xlsx');
   }
 
+  // Get the appropriate class for the table based on the year
   getTableClass(year: string): string {
     switch (year) {
       case '2024':

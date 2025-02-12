@@ -11,6 +11,7 @@
   padding: 1%;
 }
 
+// Sidebar menu icon (for mobile or responsive menu)
 .sidebar {
   padding-left: 2%;
   align-self: center;
@@ -19,6 +20,7 @@
   font-size: 30px;
 }
 
+// Website title 
 .title {
   color: #fff;
   text-transform: uppercase;
@@ -30,30 +32,12 @@
   cursor: pointer;
 }
 
+// Right-side section (language selection, search, login)
 .rightDiv {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding-right: 2%;
-}
-
-.searchInput {
-  border: none;
-  padding: 0 5px;
-  border-radius: 5px;
-  outline: none;
-  max-width: 0;
-  overflow: hidden;
-  opacity: 0;
-  margin-left: 10px;
-  transition: max-width 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
-}
-
-.searchInputExpanded {
-  max-width: 150px;
-  padding: 5px;
-  opacity: 1;
-  background-color: white;
 }
 
 .languageIcon,
@@ -72,6 +56,7 @@
   margin-right: 4%;
 }
 
+// Language selection 
 .langContent {
   position: absolute;
   background-color: white;
@@ -106,6 +91,25 @@
 
 .abbreviation {
   font-size: 14px;
+}
+
+.searchInput {
+  border: none;
+  padding: 0 5px;
+  border-radius: 5px;
+  outline: none;
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin-left: 10px;
+  transition: max-width 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+}
+
+.searchInputExpanded {
+  max-width: 150px;
+  padding: 5px;
+  opacity: 1;
+  background-color: white;
 }
 
 .buttonsContainer {

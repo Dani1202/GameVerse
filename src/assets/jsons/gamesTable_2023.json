@@ -1,283 +1,282 @@
 {
-    "columns": [
-      "Título",
-      "Precio",
-      "Plataforma",
-      "Género",
-      "PEGI",
-      "Mes de salida"
-    ],
-    "games": [
-      {
-        "id": 1,
-        "title": "Pizza Tower",
-        "price": 19.50,
-        "platform": "PC",
-        "genre": "Aventura, Puzles",
-        "pegi": 12,
-        "releaseDate": "Enero"
-      },
-      {
-        "id": 2,
-        "title": "Dead Space (2023)",
-        "price": 69.99,
-        "platform": "PS5, Xbox, PC",
-        "genre": "Acción, Aventura, Supervivencia, Terror",
-        "pegi": 18,
-        "releaseDate": "Enero"
-      },
-      {
-        "id": 3,
-        "title": "SpongeBob SquarePants",
-        "price": 29.99,
-        "platform": "PS5, Xbox, PC, Switch",
-        "genre": "Acción, Aventura",
-        "pegi": 7,
-        "releaseDate": "Enero"
-      },
-      {
-        "id": 4,
-        "title": "Backfirewall",
-        "price": 14.99,
-        "platform": "PS5, Xbox, PC, Switch",
-        "genre": "Aventura",
-        "pegi": 12,
-        "releaseDate": "Enero"
-      },
-      {
-        "id": 5,
-        "title": "Hogwarts Legacy",
-        "price": 59.99,
-        "platform": "PS5, Xbox, PC, Switch",
-        "genre": "Aventura, Acción",
-        "pegi": 16,
-        "releaseDate": "Febrero"
-      },
-      {
-        "id": 6,
-        "title": "Metroid Prime Remastered",
-        "price": 39.99,
-        "platform": "Switch",
-        "genre": "Acción, Aventura",
-        "pegi": 12,
-        "releaseDate": "Febrero"
-      },
-      {
-        "id": 7,
-        "title": "The Light Brigade",
-        "price": 29.99,
-        "platform": "PS5, PC",
-        "genre": "Acción, Aventura, VR",
-        "pegi": 16,
-        "releaseDate": "Febrero"
-      },
-      {
-        "id": 8,
-        "title": "Aces & Adventures",
-        "price": 19.50,
-        "platform": "PC",
-        "genre": "Aventura, Puzles",
-        "pegi": 7,
-        "releaseDate": "Febrero"
-      },
-      {
-        "id": 9,
-        "title": "Tents and Trees",
-        "price": 9.99,
-        "platform": "PC, Switch",
-        "genre": "Puzles",
-        "pegi": 3,
-        "releaseDate": "Marzo"
-      },
-      {
-        "id": 10,
-        "title": "The Dark Pictures: Switchback VR",
-        "price": 39.99,
-        "platform": "PS5",
-        "genre": "Acción, VR",
-        "pegi": 16,
-        "releaseDate": "Marzo"
-      },
-      {
-        "id": 11,
-        "title": "WWE 2K23",
-        "price": 69.99,
-        "platform": "PS5, Xbox, PC",
-        "genre": "Deportes",
-        "pegi": 16,
-        "releaseDate": "Marzo"
-      },
-      {
-        "id": 12,
-        "title": "MLB The Show 23",
-        "price": 69.99,
-        "platform": "PS5, Xbox, Switch",
-        "genre": "Deportes",
-        "pegi": 3,
-        "releaseDate": "Marzo"
-      },
-      {
-        "id": 13,
-        "title": "Dead Island 2",
-        "price": 69.99,
-        "platform": "PS5, Xbox, PC",
-        "genre": "Acción, Aventura, Terror",
-        "pegi": 18,
-        "releaseDate": "Abril"
-      },
-      {
-        "id": 14,
-        "title": "Star Wars Jedi: Survivor",
-        "price": 69.99,
-        "platform": "PS5, Xbox, PC",
-        "genre": "Acción, Aventura",
-        "pegi": 16,
-        "releaseDate": "Abril"
-      },
-      {
-        "id": 15,
-        "title": "The Legend of Zelda: Tears of the Kingdom",
-        "price": 59.99,
-        "platform": "Switch",
-        "genre": "Acción, Aventura",
-        "pegi": 12,
-        "releaseDate": "Mayo"
-      },
-      {
-        "id": 16,
-        "title": "Humanity",
-        "price": 29.99,
-        "platform": "PS5, Xbox, PC",
-        "genre": "Puzles, VR",
-        "pegi": 12,
-        "releaseDate": "Mayo"
-      },
-      {
-        "id": 17,
-        "title": "Street Fighter 6",
-        "price": 69.99,
-        "platform": "PS5, Xbox, PC",
-        "genre": "Acción, Lucha",
-        "pegi": 12,
-        "releaseDate": "Junio"
-      },
-      {
-        "id": 18,
-        "title": "Diablo IV",
-        "price": 69.99,
-        "platform": "PS5, Xbox, PC",
-        "genre": "Acción, Aventura",
-        "pegi": 18,
-        "releaseDate": "Junio"
-      },
-      {
-        "id": 19,
-        "title": "F1 23",
-        "price": 69.99,
-        "platform": "PS5, Xbox, PC",
-        "genre": "Deportes",
-        "pegi": 3,
-        "releaseDate": "Junio"
-      },
-      {
-        "id": 20,
-        "title": "Final Fantasy XVI",
-        "price": 69.99,
-        "platform": "PS5",
-        "genre": "Acción",
-        "pegi": 18,
-        "releaseDate": "Junio"
-      },
-      {
-        "id": 21,
-        "title": "Turbo Overkill",
-        "price": 24.50,
-        "platform": "PC",
-        "genre": "Acción",
-        "pegi": 18,
-        "releaseDate": "Julio"
-      },
-      {
-        "id": 22,
-        "title": "Baldur's Gate 3",
-        "price": 69.99,
-        "platform": "PS5, Xbox, PC",
-        "genre": "Acción, Aventura",
-        "pegi": 18,
-        "releaseDate": "Agosto"
-      },
-      {
-        "id": 23,
-        "title": "Sea of Stars",
-        "price": 39.99,
-        "platform": "PS5, Xbox, PC, Switch",
-        "genre": "Aventura",
-        "pegi": 12,
-        "releaseDate": "Agosto"
-      },
-      {
-        "id": 24,
-        "title": "Starfield",
-        "price": 69.99,
-        "platform": "PC, Xbox",
-        "genre": "Acción",
-        "pegi": 16,
-        "releaseDate": "Septiembre"
-      },
-      {
-        "id": 25,
-        "title": "Ugly",
-        "price": 19.50,
-        "platform": "PC, Xbox, Switch",
-        "genre": "Aventura, Puzles",
-        "pegi": 12,
-        "releaseDate": "Septiembre"
-      },
-      {
-        "id": 26,
-        "title": "Mortal Kombat 1",
-        "price": 69.99,
-        "platform": "PS5, Xbox, PC, Switch",
-        "genre": "Lucha",
-        "pegi": 18,
-        "releaseDate": "Septiembre"
-      },
-      {
-        "id": 27,
-        "title": "Marvel's Spider-Man 2",
-        "price": 79.99,
-        "platform": "PS5",
-        "genre": "Acción, Aventura",
-        "pegi": 16,
-        "releaseDate": "Octubre"
-      },
-      {
-        "id": 28,
-        "title": "Super Mario Bros. Wonder",
-        "price": 59.99,
-        "platform": "Switch",
-        "genre": "Aventura, Puzles",
-        "pegi": 7,
-        "releaseDate": "Octubre"
-      },
-      {
-        "id": 29,
-        "title": "Slay the Princess",
-        "price": 17.49,
-        "platform": "PC",
-        "genre": "Aventura, Terror",
-        "pegi": 18,
-        "releaseDate": "Octubre"
-      },
-      {
-        "id": 30,
-        "title": "Super Mario RPG",
-        "price": 59.99,
-        "platform": "Switch",
-        "genre": "Acción, Aventura, Puzles",
-        "pegi": 7,
-        "releaseDate": "Noviembre"
-      }
-    ]
-  }
-  
+  "columns": [
+    "Título",
+    "Precio",
+    "Plataforma",
+    "Género",
+    "PEGI",
+    "Mes de salida"
+  ],
+  "games": [
+    {
+      "id": 1,
+      "title": "Pizza Tower",
+      "price": 19.5,
+      "platform": "PC",
+      "genre": "Aventura, Puzles",
+      "pegi": 12,
+      "releaseDate": "Enero"
+    },
+    {
+      "id": 2,
+      "title": "Dead Space (2023)",
+      "price": 69.99,
+      "platform": "PS5, Xbox, PC",
+      "genre": "Acción, Aventura, Supervivencia, Terror",
+      "pegi": 18,
+      "releaseDate": "Enero"
+    },
+    {
+      "id": 3,
+      "title": "SpongeBob SquarePants",
+      "price": 29.99,
+      "platform": "PS5, Xbox, PC, Switch",
+      "genre": "Acción, Aventura",
+      "pegi": 7,
+      "releaseDate": "Enero"
+    },
+    {
+      "id": 4,
+      "title": "Backfirewall",
+      "price": 14.99,
+      "platform": "PS5, Xbox, PC, Switch",
+      "genre": "Aventura",
+      "pegi": 12,
+      "releaseDate": "Enero"
+    },
+    {
+      "id": 5,
+      "title": "Hogwarts Legacy",
+      "price": 59.99,
+      "platform": "PS5, Xbox, PC, Switch",
+      "genre": "Aventura, Acción",
+      "pegi": 16,
+      "releaseDate": "Febrero"
+    },
+    {
+      "id": 6,
+      "title": "Metroid Prime Remastered",
+      "price": 39.99,
+      "platform": "Switch",
+      "genre": "Acción, Aventura",
+      "pegi": 12,
+      "releaseDate": "Febrero"
+    },
+    {
+      "id": 7,
+      "title": "The Light Brigade",
+      "price": 29.99,
+      "platform": "PS5, PC",
+      "genre": "Acción, Aventura, VR",
+      "pegi": 16,
+      "releaseDate": "Febrero"
+    },
+    {
+      "id": 8,
+      "title": "Aces & Adventures",
+      "price": 19.5,
+      "platform": "PC",
+      "genre": "Aventura, Puzles",
+      "pegi": 7,
+      "releaseDate": "Febrero"
+    },
+    {
+      "id": 9,
+      "title": "Tents and Trees",
+      "price": 9.99,
+      "platform": "PC, Switch",
+      "genre": "Puzles",
+      "pegi": 3,
+      "releaseDate": "Marzo"
+    },
+    {
+      "id": 10,
+      "title": "The Dark Pictures: Switchback VR",
+      "price": 39.99,
+      "platform": "PS5",
+      "genre": "Acción, VR",
+      "pegi": 16,
+      "releaseDate": "Marzo"
+    },
+    {
+      "id": 11,
+      "title": "WWE 2K23",
+      "price": 69.99,
+      "platform": "PS5, Xbox, PC",
+      "genre": "Deportes",
+      "pegi": 16,
+      "releaseDate": "Marzo"
+    },
+    {
+      "id": 12,
+      "title": "MLB The Show 23",
+      "price": 69.99,
+      "platform": "PS5, Xbox, Switch",
+      "genre": "Deportes",
+      "pegi": 3,
+      "releaseDate": "Marzo"
+    },
+    {
+      "id": 13,
+      "title": "Dead Island 2",
+      "price": 69.99,
+      "platform": "PS5, Xbox, PC",
+      "genre": "Acción, Aventura, Terror",
+      "pegi": 18,
+      "releaseDate": "Abril"
+    },
+    {
+      "id": 14,
+      "title": "Star Wars Jedi: Survivor",
+      "price": 69.99,
+      "platform": "PS5, Xbox, PC",
+      "genre": "Acción, Aventura",
+      "pegi": 16,
+      "releaseDate": "Abril"
+    },
+    {
+      "id": 15,
+      "title": "The Legend of Zelda: Tears of the Kingdom",
+      "price": 59.99,
+      "platform": "Switch",
+      "genre": "Acción, Aventura",
+      "pegi": 12,
+      "releaseDate": "Mayo"
+    },
+    {
+      "id": 16,
+      "title": "Humanity",
+      "price": 29.99,
+      "platform": "PS5, Xbox, PC",
+      "genre": "Puzles, VR",
+      "pegi": 12,
+      "releaseDate": "Mayo"
+    },
+    {
+      "id": 17,
+      "title": "Street Fighter 6",
+      "price": 69.99,
+      "platform": "PS5, Xbox, PC",
+      "genre": "Acción, Lucha",
+      "pegi": 12,
+      "releaseDate": "Junio"
+    },
+    {
+      "id": 18,
+      "title": "Diablo IV",
+      "price": 69.99,
+      "platform": "PS5, Xbox, PC",
+      "genre": "Acción, Aventura",
+      "pegi": 18,
+      "releaseDate": "Junio"
+    },
+    {
+      "id": 19,
+      "title": "F1 23",
+      "price": 69.99,
+      "platform": "PS5, Xbox, PC",
+      "genre": "Deportes",
+      "pegi": 3,
+      "releaseDate": "Junio"
+    },
+    {
+      "id": 20,
+      "title": "Final Fantasy XVI",
+      "price": 69.99,
+      "platform": "PS5",
+      "genre": "Acción",
+      "pegi": 18,
+      "releaseDate": "Junio"
+    },
+    {
+      "id": 21,
+      "title": "Turbo Overkill",
+      "price": 24.5,
+      "platform": "PC",
+      "genre": "Acción",
+      "pegi": 18,
+      "releaseDate": "Julio"
+    },
+    {
+      "id": 22,
+      "title": "Baldur's Gate 3",
+      "price": 69.99,
+      "platform": "PS5, Xbox, PC",
+      "genre": "Acción, Aventura",
+      "pegi": 18,
+      "releaseDate": "Agosto"
+    },
+    {
+      "id": 23,
+      "title": "Sea of Stars",
+      "price": 39.99,
+      "platform": "PS5, Xbox, PC, Switch",
+      "genre": "Aventura",
+      "pegi": 12,
+      "releaseDate": "Agosto"
+    },
+    {
+      "id": 24,
+      "title": "Starfield",
+      "price": 69.99,
+      "platform": "PC, Xbox",
+      "genre": "Acción",
+      "pegi": 16,
+      "releaseDate": "Septiembre"
+    },
+    {
+      "id": 25,
+      "title": "Ugly",
+      "price": 19.5,
+      "platform": "PC, Xbox, Switch",
+      "genre": "Aventura, Puzles",
+      "pegi": 12,
+      "releaseDate": "Septiembre"
+    },
+    {
+      "id": 26,
+      "title": "Mortal Kombat 1",
+      "price": 69.99,
+      "platform": "PS5, Xbox, PC, Switch",
+      "genre": "Lucha",
+      "pegi": 18,
+      "releaseDate": "Septiembre"
+    },
+    {
+      "id": 27,
+      "title": "Marvel's Spider-Man 2",
+      "price": 79.99,
+      "platform": "PS5",
+      "genre": "Acción, Aventura",
+      "pegi": 16,
+      "releaseDate": "Octubre"
+    },
+    {
+      "id": 28,
+      "title": "Super Mario Bros. Wonder",
+      "price": 59.99,
+      "platform": "Switch",
+      "genre": "Aventura, Puzles",
+      "pegi": 7,
+      "releaseDate": "Octubre"
+    },
+    {
+      "id": 29,
+      "title": "Slay the Princess",
+      "price": 17.49,
+      "platform": "PC",
+      "genre": "Aventura, Terror",
+      "pegi": 18,
+      "releaseDate": "Octubre"
+    },
+    {
+      "id": 30,
+      "title": "Super Mario RPG",
+      "price": 59.99,
+      "platform": "Switch",
+      "genre": "Acción, Aventura, Puzles",
+      "pegi": 7,
+      "releaseDate": "Noviembre"
+    }
+  ]
+}

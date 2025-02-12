@@ -10,15 +10,22 @@ import { ReviewsService } from 'src/app/services/reviews.service';
 })
 
 export class ReviewsComponent implements OnInit {
-  
+
   constructor(private reviewsService: ReviewsService) { }
 
   //CHARTS
-   private originalBackgroundColors: string[] = [];
+  chartTypes = [
+    { id: 'lineChart', title: 'REVIEWS.LINECHART_TITLE' },
+    { id: 'barChart', title: 'REVIEWS.BARCHART_TITLE' },
+    { id: 'pieChart', title: 'REVIEWS.PIECHART_TITLE' }
+  ];
+
   lineChart: any
   barChart: any
   pieChart: any;
-  
+  private originalBackgroundColors: string[] = [];
+
+  // Function to handle hover event for pie chart legend items, changing their colors
   private handlehoover(e: ChartEvent, legendItem: LegendItem, legend: LegendElement<'pie'>) {
     const backgroundColor = legend.chart.data.datasets[0].backgroundColor;
 
@@ -34,6 +41,7 @@ export class ReviewsComponent implements OnInit {
     }
   }
 
+  // Function to handle the mouse leave event for pie chart legend items, restoring original colors
   private handleleave(e: ChartEvent, legendItem: LegendItem, legend: LegendElement<'pie'>) {
     const backgroundColor = legend.chart.data.datasets[0].backgroundColor;
 
@@ -46,6 +54,11 @@ export class ReviewsComponent implements OnInit {
   }
 
   //REVIEWS
+  reviewFormFields = [
+    { id: 'userName', name: 'userName', type: 'text', label: 'REVIEWS.USER', placeholder: 'Ej. Usuario 4', errorMessage: 'REVIEWS.USER_REQUIRED' },
+    { id: 'gameTitle', name: 'gameTitle', type: 'text', label: 'REVIEWS.GAME_TITLE', placeholder: 'Ej. The Legend of Zelda', errorMessage: 'REVIEWS.GAME_TITLE_REQUIRED' },
+    { id: 'userReview', name: 'userReview', type: 'textarea', label: 'REVIEWS.REVIEW', placeholder: 'Escribe tu reseña aquí...', errorMessage: 'REVIEWS.REVIEW_REQUIRED' }
+  ];
   reviewForm: FormGroup = new FormGroup({});
   reviews: any[] = [];
 
@@ -56,6 +69,7 @@ export class ReviewsComponent implements OnInit {
 
   initializeCharts() {
     this.reviewsService.getChartData().subscribe(data => {
+      // Initialize the line chart
       this.lineChart = new Chart("lineChart", {
         type: "line",
         data: data.lineChart,
@@ -82,6 +96,7 @@ export class ReviewsComponent implements OnInit {
         }
       });
 
+      // Initialize the bar chart
       this.barChart = new Chart("barChart", {
         type: "bar",
         data: data.barChart,
@@ -120,6 +135,7 @@ export class ReviewsComponent implements OnInit {
         }
       });
 
+      // Initialize the pie chart
       this.pieChart = new Chart("pieChart", {
         type: "pie",
         data: data.pieChart,
@@ -148,17 +164,20 @@ export class ReviewsComponent implements OnInit {
   }
 
   initializeReviews() {
+    // Create the form with required validators for each field
     this.reviewForm = new FormGroup({
       gameTitle: new FormControl('', Validators.required),
       userName: new FormControl('', Validators.required),
       userReview: new FormControl('', Validators.required)
     });
 
+    // Fetch reviews from the service
     this.reviewsService.getReviews().subscribe(data => {
-      this.reviews = data.reviews; 
+      this.reviews = data.reviews;
     });
   }
 
+  // Add the new review to the list
   onSubmit() {
     if (this.reviewForm.valid) {
       const newReview = this.reviewForm.value;

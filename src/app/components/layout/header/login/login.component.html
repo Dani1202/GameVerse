@@ -1,12 +1,17 @@
+<!-- USER ICON TO LOG IN -->
+<!-- If the user is NOT authenticated, show a user icon that opens the login modal -->
 <div *ngIf="!isLoggedIn" class="user" (click)="toggleModal('login')">
   <i class="fa fa-user"></i>
 </div>
 
+<!-- LOGGED-IN USER INFO -->
+<!-- If the user is authenticated, display their username and a logout button -->
 <div *ngIf="isLoggedIn" class="loggedUser">
   <span>{{ currentUser?.username }}</span>
-  <button class="logout" (click)="logout()">Cerrar sesión</button>
+  <button class="logout" (click)="logout()">{{'LOGIN.LOGOUT' | i18next}}</button>
 </div>
 
+<!-- LOGIN MODAL -->
 <div #loginModal class="popUp" *ngIf="activeModal === 'login'" [ngClass]="{ 'active': activeModal}">
   <div class="header">
     <h2>{{'LOGIN.TITLE' | i18next}}</h2>
@@ -16,6 +21,7 @@
   </div>
 
   <div class="form">
+    <!-- Error message if login fails -->
     <div *ngIf="loginError" class="alert alert-danger" role="alert" [innerHTML]="'LOGIN.ERROR_MESSAGE' | i18next"></div>
 
     <form [formGroup]="loginForm">
@@ -32,14 +38,19 @@
         <input type="checkbox" id="rememberMe" placeholder="Contraseña">
       </div>
       <div class="formElement">
+        <!-- Submit button for login form -->
         <button class="login" type="submit" (click)="login()">{{'LOGIN.LOGIN' | i18next}}</button>
       </div>
     </form>
+
+    <!-- Button to open the registration modal -->
     <div class="formElement">
       <button class="register" type="button" (click)="toggleModal('register')">
         {{'LOGIN.SIGN_UP' | i18next}}
       </button>
     </div>
+
+    <!-- Button to open the password recovery modal -->
     <div class="formElement forgottenPasswordContainer">
       <button class="forgottenPassword" type="button" (click)="toggleModal('recovery')">
         {{'LOGIN.FORGOTTEN_PASSWORD' | i18next}}
@@ -48,6 +59,7 @@
   </div>
 </div>
 
+<!-- REGISTRATION MODAL -->
 <div #registerModal class="popUp" *ngIf="activeModal === 'register'" [ngClass]="{ 'active': activeModal }">
   <div class="header">
     <h2>{{'REGISTER.TITLE' | i18next}}</h2>
@@ -57,9 +69,11 @@
   </div>
 
   <div class="form">
+    <!-- Success message when user registers successfully -->
     <div *ngIf="registrationSuccess" class="alert alert-success" role="alert">
       {{'REGISTER.SUCCESS_MESSAGE' | i18next}}
     </div>
+    <!-- Error message if registration fails -->
     <div *ngIf="registrationError" class="alert alert-danger" role="alert"
       [innerHTML]="'REGISTER.ERROR_MESSAGE' | i18next"></div>
 
@@ -82,15 +96,20 @@
       </div>
 
       <div class="formElement">
+        <!-- Submit button for registration form -->
         <button class="login" type="submit" (click)="register()">{{'REGISTER.REGISTER' | i18next}}</button>
       </div>
     </form>
 
+    <!-- Terms and conditions -->
     <div class="formElement termsContainer">
       <p>{{'REGISTER.PRE_TERMS' | i18next}}<a href="#">{{'REGISTER.TERMS' | i18next}}</a> {{'REGISTER.PRE_PRIVACY' |
         i18next}} <a href="#">{{'REGISTER.PRIVACY' | i18next}}</a> {{'REGISTER.AFTER_PRIVACY' | i18next}}</p>
     </div>
+
     <hr>
+
+    <!-- Link to switch to login -->
     <div class="formElement loginLinkContainer">
       <p>{{'REGISTER.ACCOUNT_PROMPT' | i18next}}</p>
       <button class="loginLink" type="button" (click)="toggleModal('login')">{{'REGISTER.LOGIN' | i18next}}</button>
@@ -98,6 +117,7 @@
   </div>
 </div>
 
+<!-- PASSWORD RECOVERY MODAL -->
 <div #recoveryModal class="popUp" *ngIf="activeModal === 'recovery'" [ngClass]="{ 'active': activeModal }">
   <div class="header">
     <h2>{{'RECOVERY.TITLE' | i18next}}</h2>
@@ -107,8 +127,10 @@
   </div>
 
   <div class="form">
+    <!-- Success message when requesting password recovery -->
     <div *ngIf="recoverySuccess" class="alert alert-success" role="alert"
       [innerHTML]="'RECOVERY.SUCCESS_MESSAGE' | i18next"></div>
+    <!-- Error message if password recovery fails -->
     <div *ngIf="recoveryError" class="alert alert-danger" role="alert" [innerHTML]="'RECOVERY.ERROR_MESSAGE' | i18next">
     </div>
 
@@ -118,12 +140,15 @@
         <input type="email" id="recoveryEmail" formControlName="email">
       </div>
       <div class="formElement recoveryContainer">
+        <!-- Button to request password recovery -->
         <button class="recovery" type="button" (click)="recoverPassword()">{{'RECOVERY.RECOVERY_PASSWORD' |
           i18next}}</button>
+        <!-- Button to cancel and go back to login -->
         <button class="cancel" type="button" (click)="toggleModal('login')">{{'RECOVERY.CANCEL' | i18next}}</button>
       </div>
     </form>
   </div>
 </div>
 
+<!-- DARK OVERLAY WHEN A MODAL IS OPEN -->
 <div #overlay class="overlay" *ngIf="activeModal"></div>

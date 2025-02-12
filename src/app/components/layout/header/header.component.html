@@ -1,51 +1,44 @@
 <!--HEADER-->
 <header class="topbar">
   <div class="headerContainer">
-    <div class="sidebar col-md-4">
-      <i class="fa fa-bars"></i>
-    </div>
+    <!-- Sidebar menu icon (for mobile or responsive menu) -->
+    <i class="fa fa-bars sidebar col-md-4"></i>
 
+    <!-- Website title -->
     <h1 class="title col-md-4" routerLink="">{{ 'GAMEVERSE_TITLE' | i18next }}</h1>
 
     <div class="col-md-4 rightDiv">
-
+      <!-- Language selection dropdown -->
       <div class="langDropdown" (click)="toggleLanguage()">
         <span class="languageIcon">
-         <i  class="fa-solid fa-globe"></i>
-        </span>  
+          <i class="fa-solid fa-globe"></i>
+        </span>
+        <!-- Language options -->
         <div class="langContent" *ngIf="showLanguage" (click)="stopPropagation($event)">
-          <button class="flag" *ngFor="let lang of languages" (click)="changeLanguage(lang)" [ngClass]="{ 'selected': lang === language }">
+          <button class="flag" *ngFor="let lang of languages" (click)="changeLanguage(lang)"
+            [ngClass]="{ 'selected': lang === language }">
             <img src="./assets/images/flags/{{ lang }}.png" alt="{{lang}}">
             <span class="abbreviation">{{ lang | uppercase }}</span>
           </button>
         </div>
       </div>
-    
-      <div>
-        <span class="searchIcon" (click)="toggleSearch()">
-          <i class="fas fa-search"></i>
-        </span>
-        <input class="searchInput" [ngClass]="{ 'searchInputExpanded': searchExpanded }" type="text"
-          placeholder="Buscar..." />
-      </div>
-
-      <div>       
-        <app-login></app-login>
-      </div>
-
+      <!-- Search icon and input -->
+      <span class="searchIcon" (click)="toggleSearch()">
+        <i class="fas fa-search"></i>
+      </span>
+      <input class="searchInput" [ngClass]="{ 'searchInputExpanded': searchExpanded }" type="text"
+        placeholder="Buscar..." />
+      <!-- Login component (user authentication) -->
+      <app-login></app-login>
     </div>
   </div>
 
+  <!-- Navigation buttons container -->
   <div class="buttonsContainer">
     <div class="buttons">
-      <button routerLink="">{{ 'HOME.BUTTON' | i18next }}</button>
-      <button routerLink="/games">{{ 'GAMES.BUTTON' | i18next }}</button>
-      <button routerLink="/news">{{ 'NEWS.BUTTON' | i18next }}</button>
-      <button routerLink="/videos">{{ 'VIDEOS.BUTTON' | i18next }}</button>
-      <button routerLink="/reviews">{{ 'REVIEWS.BUTTON' | i18next }}</button>
-      <button *ngIf="isAdmin()" routerLink="/tables">{{ 'TABLES.BUTTON' | i18next }}</button>
+      <button *ngFor="let page of ['HOME', 'GAMES', 'REVIEWS', 'TABLES']" routerLink="/{{ page.toLowerCase() }}">
+        {{ page + '.BUTTON' | i18next }}
+      </button>
     </div>
   </div>
 </header>
-
-

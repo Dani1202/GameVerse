@@ -2,31 +2,46 @@
   "GAMEVERSE_TITLE": "GameVerse",
   "HOME": {
     "BUTTON": "Inicio",
-    "TITLE_NEWS":"Lo Más Relevante",
+    "TITLE_NEWS": "Lo Más Relevante",
     "TITLE_GAMES": "Descubre los Mejores Juegos",
     "DESCRIPTION": "Explora nuestra selección de los TOP 100 juegos mejor valorados."
   },
   "GAMES": {
     "BUTTON": "Juegos",
-    "NEW_RELEASES": "Nuevos Lanzamientos",
-    "UPCOMING_RELEASES": "Próximos Lanzamientos",
+    "NEWRELEASES": "Nuevos Lanzamientos",
+    "UPCOMINGRELEASES": "Próximos Lanzamientos",
     "TOP100": "Top 100 Mejores juegos",
-    "PS_PLUS": "Nuevo en PlayStation Plus"
-  },
-  "NEWS": {
-    "BUTTON": "Noticias"
-  },
-  "VIDEOS": {
-    "BUTTON": "Videos"
+    "PSPLUS": "Nuevo en PlayStation Plus",
+    "RELEASE": "Lanzamiento:",
+    "CONSOLES": "Plataformas:",
+    "RATING": "Nota:",
+    "BUY": "Comprar Ahora",
+    "IMAGES": "Imágenes"
   },
   "REVIEWS": {
     "BUTTON": "Analisis y reseñas",
     "LINECHART_TITLE": "Lanzamiento Mensual de Videojuegos por Plataforma en 2023",
     "BARCHART_TITLE": "Ventas Anuales de Consolas de Actual Generación (2017 - 2024)",
-    "PIECHART_TITLE": "Tiempo semanal dedicado a jugar videojuegos en España en 2023, por dispositivo (en horas)"
+    "PIECHART_TITLE": "Tiempo semanal dedicado a jugar videojuegos en España en 2023, por dispositivo (en horas)",
+    "TITLE": "Reseñas:",
+    "USERNAME": "Por:",
+    "ADD_REVIEW": "Añadir una reseña",
+    "USER": "Usuario:",
+    "USER_REQUIRED": "Tu usuario es requerido.",
+    "GAME_TITLE": "Título del juego:",
+    "GAME_TITLE_REQUIRED": "El título del juego es requerido.",
+    "REVIEW": "Reseña:",
+    "REVIEW_REQUIRED": "Tu reseña es requerida.",
+    "SEND": "Enviar"
   },
   "TABLES": {
-    "BUTTON": "Tablas"
+    "BUTTON": "Tablas",
+    "TITLE": "Juegos Destacados en",
+    "PAGE": "Página",
+    "CONNECTOR": "de",
+    "PREVIOUS_PAGE": "Anterior",
+    "NEXT_PAGE": "Siguiente",
+    "EXCEL": "Exportar a Excel"
   },
   "LOGIN": {
     "TITLE": "Iniciar Sesión",
@@ -36,7 +51,8 @@
     "REMEMBER_ME": "Recuérdame",
     "LOGIN": "Entrar",
     "SIGN_UP": "Registrate gratis",
-    "FORGOTTEN_PASSWORD": "¿Has olvidado tu contraseña?"
+    "FORGOTTEN_PASSWORD": "¿Has olvidado tu contraseña?",
+    "LOGOUT": "Cerrar sesión"
   },
   "REGISTER": {
     "TITLE": "Regístrate en GameVerse",
@@ -62,5 +78,30 @@
     "EMAIL": "Correo electrónico",
     "RECOVERY_PASSWORD": "Recuperar Contraseña",
     "CANCEL": "Cancelar"
+  },
+  "ERROR": {
+    "TITLE": "¡Oops! Página no encontrada",
+    "DESCRIPTION": "La página que estás buscando no existe.",
+    "BUTTON": "Volver al inicio",
+    "ADMIN": "Error: Acceso Restringido",
+    "ADMIN_TITLE": "Debes iniciar sesión como administrador para acceder a esta página.",
+    "ADMIN_INSTRUCTIONS": "Instrucciones:",
+    "ADMIN_EMAIL": "Correo de administrador:",
+    "ADMIN_PASSWORD": "Contraseña:",
+    "ADMIN_LOGIN_EMAIL": "admin@gmail.com",
+    "ADMIN_LOGIN_PASSWORD": "admin",
+    "ADMIN_BUTTON": "Iniciar Sesión"
+  },
+  "FOOTER": {
+    "RIGHTS": "© 2024 GameVerse. Todos los derechos reservados.",
+    "HOME": "Inicio",
+    "CHARTS": "Gráficas de Datos",
+    "TERMS_OF_USE": "Términos de Uso",
+    "PRIVACY_POLICY": "Política de Privacidad",
+    "FACEBOOK": "Facebook",
+    "TWITTER": "Twitter",
+    "INSTAGRAM": "Instagram",
+    "YOUTUBE": "YouTube",
+    "GO_UP": "Ir Arriba"
   }
 }

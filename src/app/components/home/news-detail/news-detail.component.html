@@ -1,3 +1,4 @@
+<!-- MAIN NEW -->
 <div class="newsContainer">
   <div class="newsHeader">
     <h1>{{ news?.title[currentLanguage] }}</h1>
@@ -12,8 +13,9 @@
     <p *ngFor="let paragraph of news?.introduction[currentLanguage]" [innerHTML]="paragraph"></p>
   </div>
 
+  <!-- Each section of the news -->
   <div class="section" *ngFor="let section of news?.sections">
-    <h2>{{ section.title }}</h2>
+    <h2>{{ section.title[currentLanguage] }}</h2>
     <div class="sectionContent">
       <ng-container *ngFor="let content of section.content[currentLanguage]">
         <p *ngIf="!content.list" [innerHTML]="content"></p>
@@ -22,18 +24,20 @@
         </ul>
       </ng-container>
     </div>
-    
+
+    <!-- Images associated with each section -->
     <div class="sectionImage" *ngIf="section.images">
       <div *ngFor="let img of section.images;">
-        <img [src]="img" alt="{{ section.title }}" (click)="openLightbox(allImages.indexOf(img))"/>
+        <img [src]="img" alt="{{ section.title }}" (click)="openLightbox(allImages.indexOf(img))" />
       </div>
     </div>
   </div>
 
+  <!-- Lightbox with images when clicked -->
   <div class="lightboxContainer" *ngIf="showLightbox">
     <div class="lightboxContent">
       <span class="close" (click)="closeLightbox()"></span>
-      <img [src]="allImages[currentImage]" alt="Image"/>
+      <img [src]="allImages[currentImage]" alt="Image" />
       <div class="lightboxNav">
         <button (click)="prevImage()">&#10094;</button>
         <button (click)="nextImage()">&#10095;</button>

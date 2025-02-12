@@ -2,27 +2,106 @@
   "GAMEVERSE_TITLE": "GameVerse",
   "HOME": {
     "BUTTON": "首页",
-    "TITLE": "发现最佳游戏",
-    "DESCRIPTION": "探索我们精选的前100款最受好评的游戏。"
+    "TITLE_NEWS": "最新资讯",
+    "TITLE_GAMES": "发现最佳游戏",
+    "DESCRIPTION": "探索我们精心挑选的100款最高评价的游戏。"
   },
   "GAMES": {
     "BUTTON": "游戏",
-    "RELEASES": "新发行",
-    "TOP100": "前100佳游戏"
-  },
-  "NEWS": {
-    "BUTTON": "新闻"
-  },
-  "VIDEOS": {
-    "BUTTON": "视频"
+    "NEWRELEASES": "新发布",
+    "UPCOMINGRELEASES": "即将发布",
+    "TOP100": "Top 100最佳游戏",
+    "PSPLUS": "PlayStation Plus 新内容",
+    "RELEASE": "发布：",
+    "CONSOLES": "平台：",
+    "RATING": "评分：",
+    "BUY": "立即购买",
+    "IMAGES": "图片"
   },
   "REVIEWS": {
-    "BUTTON": "评论与评测",
-    "LINECHART_TITLE": "2023年各平台月度视频游戏发布情况",
-    "BARCHART_TITLE": "2017年至2024年当前世代游戏机年销量",
-    "PIECHART_TITLE": "2023年西班牙每周各设备游戏时间分布（小时）"
+    "BUTTON": "评论与分析",
+    "LINECHART_TITLE": "2023年按平台发布的每月视频游戏数量",
+    "BARCHART_TITLE": "当前一代游戏主机年度销量（2017 - 2024）",
+    "PIECHART_TITLE": "2023年西班牙每周玩游戏的时间（按设备分类，单位：小时）",
+    "TITLE": "评论：",
+    "USERNAME": "由：",
+    "ADD_REVIEW": "添加评论",
+    "USER": "用户：",
+    "USER_REQUIRED": "您的用户名是必需的。",
+    "GAME_TITLE": "游戏标题：",
+    "GAME_TITLE_REQUIRED": "游戏标题是必需的。",
+    "REVIEW": "评论：",
+    "REVIEW_REQUIRED": "您的评论是必需的。",
+    "SEND": "发送"
   },
   "TABLES": {
-    "BUTTON": "表格"
+    "BUTTON": "表格",
+    "TITLE": "精选游戏在",
+    "PAGE": "页",
+    "CONNECTOR": "的",
+    "PREVIOUS_PAGE": "上一页",
+    "NEXT_PAGE": "下一页",
+    "EXCEL": "导出到Excel"
+  },
+  "LOGIN": {
+    "TITLE": "登录",
+    "ERROR_MESSAGE": "<strong>错误：</strong> 邮箱或密码不正确，请重试。",
+    "EMAIL": "邮箱",
+    "PASSWORD": "密码",
+    "REMEMBER_ME": "记住我",
+    "LOGIN": "登录",
+    "SIGN_UP": "免费注册",
+    "FORGOTTEN_PASSWORD": "忘记密码？",
+    "LOGOUT": "登出"
+  },
+  "REGISTER": {
+    "TITLE": "注册 GameVerse",
+    "EMAIL": "邮箱",
+    "PASSWORD": "密码",
+    "REPEAT_PASSWORD": "重复密码",
+    "USERNAME": "用户名（仅限字母和数字）",
+    "REGISTER": "注册",
+    "SUCCESS_MESSAGE": "感谢您注册 GameVerse。",
+    "ERROR_MESSAGE": "<strong>错误：</strong> 请检查数据格式是否正确，并确保所有字段已填写。",
+    "PRE_TERMS": "加入 GameVerse 即表示您接受 ",
+    "TERMS": "使用条款",
+    "PRE_PRIVACY": "和",
+    "PRIVACY": "隐私政策",
+    "AFTER_PRIVACY": "。",
+    "ACCOUNT_PROMPT": "已经有账户？",
+    "LOGIN": "登录 GameVerse"
+  },
+  "RECOVERY": {
+    "TITLE": "找回密码",
+    "ERROR_MESSAGE": "<strong>错误：</strong> 该邮箱没有注册 GameVerse 账户。",
+    "SUCCESS_MESSAGE": "请检查您的邮箱，点击我们发送的链接来选择您的新密码。如果您找不到我们的邮件，请检查 <em>垃圾邮件</em> 文件夹。",
+    "EMAIL": "邮箱",
+    "RECOVERY_PASSWORD": "找回密码",
+    "CANCEL": "取消"
+  },
+  "ERROR": {
+    "TITLE": "哎呀！页面未找到",
+    "DESCRIPTION": "您正在寻找的页面不存在。",
+    "BUTTON": "返回首页",
+    "ADMIN": "错误：访问受限",
+    "ADMIN_TITLE": "您必须以管理员身份登录才能访问此页面。",
+    "ADMIN_INSTRUCTIONS": "说明：",
+    "ADMIN_EMAIL": "管理员邮箱：",
+    "ADMIN_PASSWORD": "密码：",
+    "ADMIN_LOGIN_EMAIL": "admin@gmail.com",
+    "ADMIN_LOGIN_PASSWORD": "admin",
+    "ADMIN_BUTTON": "登录"
+  },
+  "FOOTER": {
+    "RIGHTS": "© 2024 GameVerse. 保留所有权利。",
+    "HOME": "首页",
+    "CHARTS": "数据图表",
+    "TERMS_OF_USE": "使用条款",
+    "PRIVACY_POLICY": "隐私政策",
+    "FACEBOOK": "Facebook",
+    "TWITTER": "Twitter",
+    "INSTAGRAM": "Instagram",
+    "YOUTUBE": "YouTube",
+    "GO_UP": "返回顶部"
   }
 }

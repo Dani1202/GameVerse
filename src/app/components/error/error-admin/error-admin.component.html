@@ -1,10 +1,13 @@
+<!-- MAIN CONTAINER FOR THE ADMIN ERROR PAGE -->
 <div class="errorContainer">
-  <h1>Error: Acceso Restringido</h1>
-  <p>Debes iniciar sesión como administrador para acceder a esta página.</p>
-  <h3>Instrucciones:</h3>
-  <ul>
-    <li>Correo de administrador: <strong>admin&#64;gmail.com</strong></li>
-    <li>Contraseña: <strong>admin</strong></li>
+  <h1 class="errorTitle">{{ "ERROR.ADMIN" | i18next }}</h1>
+  <p class="errorMessage">{{ "ERROR.ADMIN_TITLE" | i18next }}</p>
+  <h3 class="errorInstructions">{{ "ERROR.ADMIN_INSTRUCTIONS" | i18next }}</h3>
+
+  <ul class="errorList">
+    <li class="errorItem">{{ "ERROR.ADMIN_EMAIL" | i18next }} <strong>{{ "ERROR.ADMIN_LOGIN_EMAIL" | i18next }}</strong></li>
+    <li class="errorItem">{{ "ERROR.ADMIN_PASSWORD" | i18next }} <strong>{{ "ERROR.ADMIN_LOGIN_PASSWORD" | i18next }}</strong></li>
   </ul>
-  <button class="login" (click)="openLoginModal()">Iniciar Sesión</button>
+  
+  <button class="login" (click)="openLoginModal()">{{ "ERROR.ADMIN_BUTTON" | i18next }}</button>
 </div>

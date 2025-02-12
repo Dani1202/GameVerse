@@ -1,55 +1,39 @@
 <!--CHARTS-->
 <div class="charts">
-  <div class="chartContainer">
-    <h1 class="chartTitle">{{ 'REVIEWS.LINECHART_TITLE' | i18next }}</h1>
-    <canvas id="lineChart"></canvas>
-  </div>
-  <div class="chartContainer">
-    <h1 class="chartTitle">{{ 'REVIEWS.BARCHART_TITLE' | i18next }}</h1>
-    <canvas id="barChart"></canvas>
-  </div>
-  <div class="chartContainer">
-    <h1 class="chartTitle">{{ 'REVIEWS.PIECHART_TITLE' | i18next }}</h1>
-    <canvas id="pieChart"></canvas>
+  <div *ngFor="let chart of chartTypes" class="chartContainer">
+    <h1 class="chartTitle">{{ chart.title | i18next }}</h1>
+    <canvas [id]="chart.id"></canvas>
   </div>
 </div>
 
 <!--REVIEWS-->
 <div class="container mt-5">
-  <h2 class="title">Reseñas:</h2>
+  <h2 class="title">{{ 'REVIEWS.TITLE' | i18next }}</h2>
   <div *ngFor="let review of reviews" class="listGroupItem">
     <h5 class="mb-1">{{ review.gameTitle }}</h5>
-    <p class="mb-1"><strong>Por: {{ review.userName }}</strong></p>
+    <p class="mb-1"><strong>{{ 'REVIEWS.USERNAME' | i18next }} {{ review.userName }}</strong></p>
     <p class="mb-1">{{ review.userReview }}</p>
   </div>
 
   <hr>
 
-  <h3 class="formTitle">Añadir una reseña</h3>
+  <h3 class="formTitle">{{ 'REVIEWS.ADD_REVIEW' | i18next }}</h3>
+  <!-- Reviews form -->
   <form [formGroup]="reviewForm" (ngSubmit)="onSubmit()">
-    <div class="mb-3">
-      <label for="userName" class="form-label">Usuario:</label>
-      <input type="text" id="userName" formControlName="userName" class="form-control" placeholder="Ej. Usuario 4">
-      <div *ngIf="reviewForm.get('userName')?.invalid && reviewForm.get('userName')?.touched" class="errorMessage">
-        Tu usuario es requerido.
+    <div class="mb-3" *ngFor="let field of reviewFormFields">
+      <label [for]="field.id" class="form-label">{{ field.label | i18next }}</label>
+      <!-- If the form field is a text input, render an input element -->
+      <input *ngIf="field.type === 'text'" [type]="field.type" [id]="field.id" [formControlName]="field.name"
+        class="form-control" [placeholder]="field.placeholder">
+      <!-- If the form field is a textarea, render a textarea element -->
+      <textarea *ngIf="field.type === 'textarea'" [id]="field.id" [formControlName]="field.name" class="form-control"
+        [placeholder]="field.placeholder"></textarea>
+      <!-- Error messages if the form field is invalid and touched -->
+      <div *ngIf="reviewForm.get(field.name)?.invalid && reviewForm.get(field.name)?.touched" class="errorMessage">
+        {{ field.errorMessage | i18next }}
       </div>
     </div>
-    <div class="mb-3">
-      <label for="gameTitle" class="form-label">Título del juego:</label>
-      <input type="text" id="gameTitle" formControlName="gameTitle" class="form-control"
-        placeholder="Ej. The Legend of Zelda">
-      <div *ngIf="reviewForm.get('gameTitle')?.invalid && reviewForm.get('gameTitle')?.touched" class="errorMessage">
-        El título del juego es requerido.
-      </div>
-    </div>
-    <div class="mb-3">
-      <label for="userReview" class="form-label">Reseña:</label>
-      <textarea id="userReview" formControlName="userReview" class="form-control"
-        placeholder="Escribe tu reseña aquí..."></textarea>
-      <div *ngIf="reviewForm.get('userReview')?.invalid && reviewForm.get('userReview')?.touched" class="errorMessage">
-        Tu reseña es requerida.
-      </div>
-    </div>
-    <button type="submit" [disabled]="reviewForm.invalid">Enviar</button>
+    <!-- Submit button, disabled if the form is invalid -->
+    <button type="submit" [disabled]="reviewForm.invalid">{{ 'REVIEWS.SEND' | i18next }}</button>
   </form>
 </div>

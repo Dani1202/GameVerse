@@ -2,27 +2,106 @@
   "GAMEVERSE_TITLE": "GameVerse",
   "HOME": {
     "BUTTON": "Home",
-    "TITLE": "Discover the Best Games",
-    "DESCRIPTION": "Explore our selection of the TOP 100 highest-rated games."
+    "TITLE_NEWS": "Top News",
+    "TITLE_GAMES": "Discover the Best Games",
+    "DESCRIPTION": "Explore our selection of the Top 100 highest-rated games."
   },
   "GAMES": {
     "BUTTON": "Games",
-    "RELEASES": "New Releases",
-    "TOP100": "Top 100 Best Games"
-  },
-  "NEWS": {
-    "BUTTON": "News"
-  },
-  "VIDEOS": {
-    "BUTTON": "Videos"
+    "NEWRELEASES": "New Releases",
+    "UPCOMINGRELEASES": "Upcoming Releases",
+    "TOP100": "Top 100 Best Games",
+    "PSPLUS": "New on PlayStation Plus",
+    "RELEASE": "Release:",
+    "CONSOLES": "Platforms:",
+    "RATING": "Rating:",
+    "BUY": "Buy Now",
+    "IMAGES": "Images"
   },
   "REVIEWS": {
-    "BUTTON": "Reviews",
-    "LINECHART_TITLE": "Monthly Video Game Releases by Platform in 2023",
+    "BUTTON": "Reviews and Analysis",
+    "LINECHART_TITLE": "Monthly Video Game Release by Platform in 2023",
     "BARCHART_TITLE": "Annual Sales of Current Generation Consoles (2017 - 2024)",
-    "PIECHART_TITLE": "Weekly Time Spent Playing Video Games in Spain in 2023, by Device (in hours)"
+    "PIECHART_TITLE": "Weekly Time Spent Playing Video Games in Spain in 2023, by Device (in hours)",
+    "TITLE": "Reviews:",
+    "USERNAME": "By:",
+    "ADD_REVIEW": "Add a Review",
+    "USER": "User:",
+    "USER_REQUIRED": "Your user is required.",
+    "GAME_TITLE": "Game Title:",
+    "GAME_TITLE_REQUIRED": "The game title is required.",
+    "REVIEW": "Review:",
+    "REVIEW_REQUIRED": "Your review is required.",
+    "SEND": "Submit"
   },
   "TABLES": {
-    "BUTTON": "Tables"
+    "BUTTON": "Tables",
+    "TITLE": "Featured Games on",
+    "PAGE": "Page",
+    "CONNECTOR": "of",
+    "PREVIOUS_PAGE": "Previous",
+    "NEXT_PAGE": "Next",
+    "EXCEL": "Export to Excel"
+  },
+  "LOGIN": {
+    "TITLE": "Login",
+    "ERROR_MESSAGE": "<strong>Error:</strong> Incorrect email or password. Please try again.",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "REMEMBER_ME": "Remember Me",
+    "LOGIN": "Login",
+    "SIGN_UP": "Sign Up for Free",
+    "FORGOTTEN_PASSWORD": "Forgot your password?",
+    "LOGOUT": "Log Out"
+  },
+  "REGISTER": {
+    "TITLE": "Sign Up for GameVerse",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "REPEAT_PASSWORD": "Repeat Password",
+    "USERNAME": "Username (letters and numbers only)",
+    "REGISTER": "Register",
+    "SUCCESS_MESSAGE": "Thank you for signing up for GameVerse.",
+    "ERROR_MESSAGE": "<strong>Error:</strong> Please check that the data is in the correct format and that all fields are filled out.",
+    "PRE_TERMS": "By joining GameVerse, you agree to the ",
+    "TERMS": "Terms of Use",
+    "PRE_PRIVACY": "and the",
+    "PRIVACY": "Privacy Policy",
+    "AFTER_PRIVACY": "of GameVerse.",
+    "ACCOUNT_PROMPT": "Already have an account?",
+    "LOGIN": "Log in to GameVerse"
+  },
+  "RECOVERY": {
+    "TITLE": "Recover Password",
+    "ERROR_MESSAGE": "<strong>Error:</strong> This email does not correspond to any registered account on GameVerse.",
+    "SUCCESS_MESSAGE": "Check your email and click the link we sent you to choose your new password. If you can't find our message, please check your <em>spam</em> folder.",
+    "EMAIL": "Email",
+    "RECOVERY_PASSWORD": "Recover Password",
+    "CANCEL": "Cancel"
+  },
+  "ERROR": {
+    "TITLE": "Oops! Page Not Found",
+    "DESCRIPTION": "The page you are looking for does not exist.",
+    "BUTTON": "Go back to Home",
+    "ADMIN": "Error: Restricted Access",
+    "ADMIN_TITLE": "You must log in as an administrator to access this page.",
+    "ADMIN_INSTRUCTIONS": "Instructions:",
+    "ADMIN_EMAIL": "Admin Email:",
+    "ADMIN_PASSWORD": "Password:",
+    "ADMIN_LOGIN_EMAIL": "admin@gmail.com",
+    "ADMIN_LOGIN_PASSWORD": "admin",
+    "ADMIN_BUTTON": "Login"
+  },
+  "FOOTER": {
+    "RIGHTS": "© 2024 GameVerse. All rights reserved.",
+    "HOME": "Home",
+    "CHARTS": "Data Charts",
+    "TERMS_OF_USE": "Terms of Use",
+    "PRIVACY_POLICY": "Privacy Policy",
+    "FACEBOOK": "Facebook",
+    "TWITTER": "Twitter",
+    "INSTAGRAM": "Instagram",
+    "YOUTUBE": "YouTube",
+    "GO_UP": "Go Up"
   }
 }

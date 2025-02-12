@@ -2,29 +2,31 @@
   display: flex;
 }
 
+// VIDEO GAME TRAILER
 .videoContainer {
   margin: 2%;
   width: 50%;
   position: relative;
   overflow: hidden;
-
-  &::before {
-    content: '';
-    display: block;
-    padding-top: 56.25%;
-  }
-
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    object-fit: cover;
-  }
 }
 
+.videoContainer::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.videoContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: cover;
+}
+
+//GAME DETAILS
 .gameDetailsContainer {
   width: 50%;
   padding: 20px;
@@ -32,22 +34,22 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
+.gameDetailsContainer h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
 
-  p {
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
+.gameDetailsContainer p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
 
-  .highlight {
-    font-size: 19px;
-    font-weight: bold;
-  }
+.gameDetailsContainer .highlight {
+  font-size: 19px;
+  font-weight: bold;
 }
 
 .consolesContainer {
@@ -100,12 +102,13 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
 
-  &:hover {
-    background-color: #3a5ba0;
-  }
-} 
+.shopButton:hover {
+  background-color: #3a5ba0;
+}
 
+// SCREENSHOTS SECTION
 .imagesContainer {
   padding: 20px;
 }
@@ -116,18 +119,18 @@
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+}
 
-  i {
-    margin-right: 0.5rem;
-  }
+.sectionTitle i {
+  margin-right: 0.5rem;
 }
 
 hr {
-    height: 1px;
-    background-color: rgb(0, 0, 0);
-    width: 87.5%;
-    margin-top: -0.5%;
-    border: none;
+  height: 1px;
+  background-color: rgb(0, 0, 0);
+  width: 87.5%;
+  margin-top: -0.5%;
+  border: none;
 }
 
 .images {
@@ -140,13 +143,14 @@ hr {
   width: calc(25% - 55px);
   cursor: pointer;
   transition: transform 0.3s ease;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
 
 .images img:hover {
   transform: scale(1.05);
 }
 
+// LIGHTBOX
 .lightboxContainer {
   position: fixed;
   top: 0;
@@ -174,7 +178,7 @@ hr {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  transition: transform 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out;
 }
 
 .lightboxNav {
@@ -189,20 +193,20 @@ hr {
 }
 
 .lightboxNav button {
-  background-color: rgba(0, 0, 0, 0.7); 
+  background-color: rgba(0, 0, 0, 0.7);
   border: none;
   color: #fff;
-  font-size: 32px; 
+  font-size: 32px;
   cursor: pointer;
-  padding: 15px; 
+  padding: 15px;
   pointer-events: all;
-  border-radius: 50%; 
-  transition: background-color 0.3s ease, transform 0.3s ease; 
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .lightboxNav button:hover {
-  background-color: rgba(255, 255, 255, 0.5); 
-  transform: scale(1.1); 
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
 }
 
 .lightboxNav button.left {
@@ -219,17 +223,17 @@ hr {
   position: absolute;
   top: 10px;
   right: 20px;
-  color: #fff; 
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px 15px; 
+  padding: 10px 15px;
   border-radius: 50%;
   transition: transform 0.3s ease, background-color 0.3s ease;
   z-index: 1002;
 }
 
 .close:hover {
-  background-color: rgba(255, 255, 255, 0.9); 
-  transform: scale(1.2); 
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.2);
 }
 
 .close:before {

@@ -38,6 +38,7 @@
   line-height: 1.5rem;
 }
 
+// Each section of the news
 .section {
   padding: 0 2rem;
   margin: 4rem auto;
@@ -60,10 +61,11 @@
   margin: 1rem 1.5rem;
 }
 
+// Images associated with each section
 .sectionImage {
   display: flex;
-  flex-direction: column; 
-  gap: 3rem;               
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .sectionImage img {
@@ -85,6 +87,7 @@
   overflow: hidden;
 }
 
+//Lightbox with images when clicked
 .lightboxContent {
   position: relative;
   max-width: 90%;

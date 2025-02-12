@@ -1,28 +1,107 @@
 {
   "GAMEVERSE_TITLE": "GameVerse",
   "HOME": {
-    "BUTTON": "Startseite",
-    "TITLE": "Entdecken Sie die besten Spiele",
-    "DESCRIPTION": "Erkunden Sie unsere Auswahl der 100 bestbewerteten Spiele."
+    "BUTTON": "Start",
+    "TITLE_NEWS": "Top Nachrichten",
+    "TITLE_GAMES": "Entdecke die besten Spiele",
+    "DESCRIPTION": "Entdecke unsere Auswahl der Top 100 am besten bewerteten Spiele."
   },
   "GAMES": {
     "BUTTON": "Spiele",
-    "RELEASES": "Neue Veröffentlichungen",
-    "TOP100": "Top 100 Beste Spiele"
-  },
-  "NEWS": {
-    "BUTTON": "Nachrichten"
-  },
-  "VIDEOS": {
-    "BUTTON": "Videos"
+    "NEWRELEASES": "Neue Veröffentlichungen",
+    "UPCOMINGRELEASES": "Bevorstehende Veröffentlichungen",
+    "TOP100": "Top 100 Beste Spiele",
+    "PSPLUS": "Neu bei PlayStation Plus",
+    "RELEASE": "Veröffentlichung:",
+    "CONSOLES": "Plattformen:",
+    "RATING": "Bewertung:",
+    "BUY": "Jetzt kaufen",
+    "IMAGES": "Bilder"
   },
   "REVIEWS": {
-    "BUTTON": "Bewertungen",
-    "LINECHART_TITLE": "Monatliche Veröffentlichungen von Videospielen nach Plattform im Jahr 2023",
-    "BARCHART_TITLE": "Jährliche Verkäufe der aktuellen Konsolengeneration (2017 - 2024)",
-    "PIECHART_TITLE": "Wöchentliche Spielzeit für Videospiele in Spanien im Jahr 2023, nach Gerät (in Stunden)"
+    "BUTTON": "Bewertungen und Analysen",
+    "LINECHART_TITLE": "Monatliche Videospielveröffentlichungen nach Plattform im Jahr 2023",
+    "BARCHART_TITLE": "Jährliche Verkaufszahlen von Konsolen der aktuellen Generation (2017 - 2024)",
+    "PIECHART_TITLE": "Wöchentliche Spielzeit in Spanien im Jahr 2023, nach Gerät (in Stunden)",
+    "TITLE": "Bewertungen:",
+    "USERNAME": "Von:",
+    "ADD_REVIEW": "Bewertung hinzufügen",
+    "USER": "Benutzer:",
+    "USER_REQUIRED": "Dein Benutzername wird benötigt.",
+    "GAME_TITLE": "Spiel Titel:",
+    "GAME_TITLE_REQUIRED": "Der Titel des Spiels wird benötigt.",
+    "REVIEW": "Bewertung:",
+    "REVIEW_REQUIRED": "Deine Bewertung wird benötigt.",
+    "SEND": "Absenden"
   },
   "TABLES": {
-    "BUTTON": "Tabellen"
+    "BUTTON": "Tabellen",
+    "TITLE": "Hervorgehobene Spiele auf",
+    "PAGE": "Seite",
+    "CONNECTOR": "von",
+    "PREVIOUS_PAGE": "Vorherige",
+    "NEXT_PAGE": "Nächste",
+    "EXCEL": "Nach Excel exportieren"
+  },
+  "LOGIN": {
+    "TITLE": "Anmelden",
+    "ERROR_MESSAGE": "<strong>Fehler:</strong> Falsche E-Mail oder Passwort. Bitte versuche es erneut.",
+    "EMAIL": "E-Mail",
+    "PASSWORD": "Passwort",
+    "REMEMBER_ME": "Angemeldet bleiben",
+    "LOGIN": "Anmelden",
+    "SIGN_UP": "Kostenlos registrieren",
+    "FORGOTTEN_PASSWORD": "Passwort vergessen?",
+    "LOGOUT": "Abmelden"
+  },
+  "REGISTER": {
+    "TITLE": "Registriere dich bei GameVerse",
+    "EMAIL": "E-Mail",
+    "PASSWORD": "Passwort",
+    "REPEAT_PASSWORD": "Passwort wiederholen",
+    "USERNAME": "Benutzername (nur Buchstaben und Zahlen)",
+    "REGISTER": "Registrieren",
+    "SUCCESS_MESSAGE": "Danke für deine Registrierung bei GameVerse.",
+    "ERROR_MESSAGE": "<strong>Fehler:</strong> Bitte überprüfe, ob die Daten im richtigen Format sind und alle Felder ausgefüllt sind.",
+    "PRE_TERMS": "Indem du dich bei GameVerse anmeldest, stimmst du den ",
+    "TERMS": "Nutzungsbedingungen",
+    "PRE_PRIVACY": "und der",
+    "PRIVACY": "Datenschutzrichtlinie",
+    "AFTER_PRIVACY": "von GameVerse zu.",
+    "ACCOUNT_PROMPT": "Hast du bereits ein Konto?",
+    "LOGIN": "Melde dich bei GameVerse an"
+  },
+  "RECOVERY": {
+    "TITLE": "Passwort wiederherstellen",
+    "ERROR_MESSAGE": "<strong>Fehler:</strong> Diese E-Mail entspricht keinem bei GameVerse registrierten Konto.",
+    "SUCCESS_MESSAGE": "Überprüfe dein E-Mail und klicke auf den Link, den wir dir geschickt haben, um dein neues Passwort auszuwählen. Falls du unsere Nachricht nicht findest, überprüfe bitte auch den <em>Spam</em>-Ordner.",
+    "EMAIL": "E-Mail",
+    "RECOVERY_PASSWORD": "Passwort wiederherstellen",
+    "CANCEL": "Abbrechen"
+  },
+  "ERROR": {
+    "TITLE": "Ups! Seite nicht gefunden",
+    "DESCRIPTION": "Die Seite, die du suchst, existiert nicht.",
+    "BUTTON": "Zurück zum Start",
+    "ADMIN": "Fehler: Beschränkter Zugang",
+    "ADMIN_TITLE": "Du musst dich als Administrator anmelden, um auf diese Seite zuzugreifen.",
+    "ADMIN_INSTRUCTIONS": "Anweisungen:",
+    "ADMIN_EMAIL": "Administrator E-Mail:",
+    "ADMIN_PASSWORD": "Passwort:",
+    "ADMIN_LOGIN_EMAIL": "admin@gmail.com",
+    "ADMIN_LOGIN_PASSWORD": "admin",
+    "ADMIN_BUTTON": "Anmelden"
+  },
+  "FOOTER": {
+    "RIGHTS": "© 2024 GameVerse. Alle Rechte vorbehalten.",
+    "HOME": "Startseite",
+    "CHARTS": "Daten Diagramme",
+    "TERMS_OF_USE": "Nutzungsbedingungen",
+    "PRIVACY_POLICY": "Datenschutzrichtlinie",
+    "FACEBOOK": "Facebook",
+    "TWITTER": "Twitter",
+    "INSTAGRAM": "Instagram",
+    "YOUTUBE": "YouTube",
+    "GO_UP": "Nach oben"
   }
 }

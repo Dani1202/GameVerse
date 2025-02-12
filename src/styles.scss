@@ -1,13 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Kdam+Thmor+Pro&display=swap');
-@import "~bootstrap/dist/css/bootstrap.min.css";
+// Importing fonts from Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Kdam+Thmor+Pro&display=swap");
+// Importing Font Awesome
 @import "~font-awesome/css/font-awesome.min.css";
+// Importing Bootstrap
+@import "~bootstrap/dist/css/bootstrap.min.css";
 
-body{
- background: #eef4fc;
- font-family: "Montserrat", sans-serif;
+// Global styles for the body
+body {
+  background: #eef4fc;
+  font-family: "Montserrat", sans-serif;
 }
+
+// Variables for colors
 :root {
-    --color-primary: #1E385D;
-    --color-secondary: #ff7f00;
-    --color-base: #59759C;
+  --color-primary: #1e385d;
+  --color-secondary: #ff7f00;
+  --color-base: #59759c;
 }

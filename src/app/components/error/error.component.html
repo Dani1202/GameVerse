@@ -1,8 +1,9 @@
+<!-- MAIN CONTAINER FOR THE ERROR PAGE -->
 <div class="errorContainer">
-  <h1>¡Oops! Página no encontrada</h1>
-  <p>La página que estás buscando no existe.</p>
+  <h1>{{ "ERROR.TITLE" | i18next }}</h1>
+  <p>{{ "ERROR.DESCRIPTION" | i18next }}</p>
   <div class="buttonContainer">
-      <button (click)="goHome()">Volver al inicio</button>  <!-- Actualizar el método llamado -->
+    <button (click)="goHome()">{{ "ERROR.BUTTON" | i18next }}</button>
   </div>
-  <img src="https://dinahosting.com/blog/upload/2020/07/eror-404.jpg" alt="Error Image">
+  <img src="https://dinahosting.com/blog/upload/2020/07/eror-404.jpg" alt="Error Image" />
 </div>

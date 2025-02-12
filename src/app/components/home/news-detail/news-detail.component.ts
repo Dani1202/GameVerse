@@ -24,8 +24,8 @@ export class NewsDetailComponent implements OnInit {
   news: News | null = null;
   currentLanguage: string = 'es';
   showLightbox: boolean = false; 
-  allImages: string[] = [];
-  currentImage: number = 0;
+  allImages: string[] = []; // Array to store all images for lightbox.
+  currentImage: number = 0; // Current image index in the lightbox.
   
   constructor(
     private route: ActivatedRoute,
@@ -39,6 +39,7 @@ export class NewsDetailComponent implements OnInit {
   ngOnInit(): void {
     this.currentLanguage = i18next.language;
     
+    // News data based on the title
     this.route.paramMap.subscribe(params => {
       const title = params.get('title');
       if (title) {

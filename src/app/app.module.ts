@@ -6,20 +6,19 @@ import { AppRoutingModule } from './modules/app-routing.module';
 import { LayoutModule } from './modules/layout.module';
 import { ViewsModule } from './modules/views.module';
 import { i18nModule } from './modules/i18n.module';
-import { DatePipe } from '@angular/common';
 
 @NgModule({
     declarations: [
         AppComponent,
     ],
-    providers: [DatePipe],
+    providers: [],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
+        NgbModule,
         AppRoutingModule,
         LayoutModule,
         ViewsModule,
-        NgbModule,
         i18nModule
         ],
 })

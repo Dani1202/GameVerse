@@ -1,209 +1,70 @@
-<!--NEW RELEASES-->
-<div class="carouselHeader">
-    <h2 class="sectionTitle">{{ "GAMES.NEW_RELEASES" | i18next }}</h2>
-    <div class="carouselControls">
-        <div class="carousel-control-circle" [ngClass]="{ buttonDisabled: startIndex['newReleases'] === 0 }"
-            (click)="navigateCarousel('newReleases', 'prev')">
-            <button class="carousel-control-prev" type="button" data-bs-target="#newReleasesGamesCarousel"
-                data-bs-slide="prev">
-                <i class="fa-solid fa-arrow-left arrow-icon"></i>
-            </button>
-        </div>
-        <div class="carousel-control-circle" [ngClass]="{
-        buttonDisabled:
-          endIndex['newReleases'] >= (newReleasesGames?.length || 0)
-      }" (click)="navigateCarousel('newReleases', 'next')">
-            <button class="carousel-control-next" type="button" data-bs-target="#newReleasesGamesCarousel"
-                data-bs-slide="next">
-                <i class="fa-solid fa-arrow-right arrow-icon"></i>
-            </button>
+<!-- GAME SECTIONS -->
+<div *ngFor="let section of gameSections">
+    <div class="carouselHeader">
+        <h2 class="sectionTitle">{{ 'GAMES.' + section.key.toUpperCase() | i18next }}</h2>
+
+        <!-- Navigation controls for the carousel -->
+        <div class="carouselControls">
+            <div class="carousel-control-circle" [ngClass]="{ buttonDisabled: startIndex[section.key] === 0 }"
+                (click)="navigateCarousel(section.key, 'prev')">
+                <button class="carousel-control-prev">
+                    <i class="fa-solid fa-arrow-left arrow-icon"></i>
+                </button>
+            </div>
+            <div class="carousel-control-circle" [ngClass]="{
+                buttonDisabled: endIndex[section.key] >= (section.games?.length || 0)
+            }" (click)="navigateCarousel(section.key, 'next')">
+                <button class="carousel-control-next">
+                    <i class="fa-solid fa-arrow-right arrow-icon"></i>
+                </button>
+            </div>
         </div>
     </div>
-</div>
-<hr />
-<div id="newReleasesGamesCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="group-container d-flex">
-                <div *ngFor="let game of getVisibleGames('newReleases')" class="divGames">
-                    <a [routerLink]="['/games', formatURL(game.title)]" class="gameLink">
-                        <img class="gameContainer" [src]="game.img" />
-                        <div class="overlay">
-                            <div class="gameTitle">
-                                {{ game.title | truncateText : 18 }}
+
+    <hr />
+
+    <!-- Carousel container -->
+    <div class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="group-container d-flex">
+                    <div *ngFor="let game of getVisibleGames(section.key)" class="divGames">
+                        <a [routerLink]="['/games', formatURL(game.title)]" class="gameLink">
+                            <img class="gameContainer" [src]="game.img" />
+                            <div class="overlay">
+                                <div class="gameTitle">{{ game.title | truncateText: 18 }}</div>
+                                <div class="ratingContainer">
+                                    <p class="ratingBox" [class]="getRatingClass(game.qualification)">
+                                        {{ game.qualification != null ? game.qualification : "tbd" }}
+                                    </p>
+                                    <span class="ratingText" *ngIf="game.qualification !== null">
+                                        {{ getRatingText(game.qualification) }}
+                                    </span>
+                                </div>
                             </div>
-                            <div class="ratingContainer">
-                                <p class="ratingBox" [class]="getRatingClass(game.qualification)">
-                                    {{ game.qualification != null ? game.qualification : "tbd" }}
-                                </p>
-                                <span class="ratingText" *ngIf="game.qualification !== null">
-                                    {{ getRatingText(game.qualification) }}
-                                </span>
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!--UPCOMING RELEASES-->
-<div class="carouselHeader">
-    <h2 class="sectionTitle">{{ "GAMES.UPCOMING_RELEASES" | i18next }}</h2>
-    <div class="carouselControls">
-        <div class="carousel-control-circle" [ngClass]="{ buttonDisabled: startIndex['upcomingReleases'] === 0 }"
-            (click)="navigateCarousel('upcomingReleases', 'prev')">
-            <button class="carousel-control-prev" type="button" data-bs-target="#upcomingGamesCarousel"
-                data-bs-slide="prev">
-                <i class="fa-solid fa-arrow-left arrow-icon"></i>
-            </button>
-        </div>
-        <div class="carousel-control-circle" [ngClass]="{
-        buttonDisabled:
-          endIndex['upcomingReleases'] >= (upcomingReleasesGames?.length || 0)
-      }" (click)="navigateCarousel('upcomingReleases', 'next')">
-            <button class="carousel-control-next" type="button" data-bs-target="#upcomingGamesCarousel"
-                data-bs-slide="next">
-                <i class="fa-solid fa-arrow-right arrow-icon"></i>
-            </button>
-        </div>
-    </div>
-</div>
-<hr />
-<div id="upcomingGamesCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="group-container d-flex">
-                <div *ngFor="let game of getVisibleGames('upcomingReleases')" class="divGames">
-                    <a [routerLink]="['/games', formatURL(game.title)]" class="gameLink">
-                        <img class="gameContainer" [src]="game.img" />
-                        <div class="overlay">
-                            <div class="gameTitle">
-                                {{ game.title | truncateText : 18 }}
-                            </div>
-                            <div class="ratingContainer">
-                                <p class="ratingBox" [class]="getRatingClass(game.qualification)">
-                                    {{ game.qualification != null ? game.qualification : "tbd" }}
-                                </p>
-                                <span class="ratingText" *ngIf="game.qualification != null">
-                                    {{ getRatingText(game.qualification) }}
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+    <!-- QUIZZ SECTION -->
+    <div *ngIf="section.key === 'upcomingReleases'">
+        <div *ngIf="currentQuizQuestion" class="quizContainer">
+            
+            <!-- Quiz question -->
+            <div class="quizQuestion">
+                <span class="questionText">{{ currentQuizQuestion?.question }}</span>
             </div>
-        </div>
-    </div>
-</div>
 
-<!--QUIZ SECTION-->
-<div *ngIf="currentQuizQuestion" class="quizContainer">
-    <div class="quizQuestion">
-        <span class="questionText">{{ currentQuizQuestion?.question }}</span>
-    </div>
-    <div class="optionsContainer">
-        <div *ngFor="let option of currentQuizQuestion?.options" (click)="checkAnswer(option)" class="optionLabel"
-            [class.correct]="selectedOption === currentQuizQuestion?.answer && option === currentQuizQuestion?.answer"
-            [class.incorrect]="selectedOption !== currentQuizQuestion?.answer && selectedOption === option">
-            {{ option }}
-        </div>
-    </div>
-</div>
-
-<!--TOP 100-->
-<div class="carouselHeader">
-    <h2 class="sectionTitle">{{ "GAMES.TOP100" | i18next }}</h2>
-    <div class="carouselControls">
-        <div class="carousel-control-circle" [ngClass]="{ buttonDisabled: startIndex['top100'] === 0 }"
-            (click)="navigateCarousel('top100', 'prev')">
-            <button class="carousel-control-prev" type="button" data-bs-target="#top100GamesCarousel"
-                data-bs-slide="prev">
-                <i class="fa-solid fa-arrow-left arrow-icon"></i>
-            </button>
-        </div>
-        <div class="carousel-control-circle" [ngClass]="{
-        buttonDisabled: endIndex['top100'] >= (top100Games?.length || 0)
-      }" (click)="navigateCarousel('top100', 'next')">
-            <button class="carousel-control-next" type="button" data-bs-target="#top100GamesCarousel"
-                data-bs-slide="next">
-                <i class="fa-solid fa-arrow-right arrow-icon"></i>
-            </button>
-        </div>
-    </div>
-</div>
-<hr />
-<div id="top100GamesCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="group-container d-flex">
-                <div *ngFor="let game of getVisibleGames('top100')" class="divGames">
-                    <a [routerLink]="['/games', formatURL(game.title)]" class="gameLink">
-                        <img class="gameContainer" [src]="game.img" />
-                        <div class="overlay">
-                            <div class="gameTitle">
-                                {{ game.title | truncateText : 18 }}
-                            </div>
-                            <div class="ratingContainer">
-                                <p class="ratingBox" [class]="getRatingClass(game.qualification)">
-                                    {{ game.qualification != null ? game.qualification : "tbd" }}
-                                </p>
-                                <span class="ratingText" *ngIf="game.qualification !== null">
-                                    {{ getRatingText(game.qualification) }}
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--PS PLUS GAMES-->
-<div class="carouselHeader">
-    <h2 class="sectionTitle">{{ "GAMES.PS_PLUS" | i18next }}</h2>
-    <div class="carouselControls">
-        <div class="carousel-control-circle" [ngClass]="{ buttonDisabled: startIndex['psPlus'] === 0 }"
-            (click)="navigateCarousel('psPlus', 'prev')">
-            <button class="carousel-control-prev" type="button" data-bs-target="#psPlusGamesCarousel"
-                data-bs-slide="prev">
-                <i class="fa-solid fa-arrow-left arrow-icon"></i>
-            </button>
-        </div>
-        <div class="carousel-control-circle" [ngClass]="{
-        buttonDisabled: endIndex['psPlus'] >= (psPlusGames?.length || 0)
-      }" (click)="navigateCarousel('psPlus', 'next')">
-            <button class="carousel-control-next" type="button" data-bs-target="#psPlusGamesCarousel"
-                data-bs-slide="next">
-                <i class="fa-solid fa-arrow-right arrow-icon"></i>
-            </button>
-        </div>
-    </div>
-</div>
-<hr />
-<div id="psPlusGamesCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="group-container d-flex">
-                <div *ngFor="let game of getVisibleGames('psPlus')" class="divGames">
-                    <a [routerLink]="['/games', formatURL(game.title)]" class="gameLink">
-                        <img class="gameContainer" [src]="game.img" />
-                        <div class="overlay">
-                            <div class="gameTitle">
-                                {{ game.title | truncateText : 18 }}
-                            </div>
-                            <div class="ratingContainer">
-                                <p class="ratingBox" [class]="getRatingClass(game.qualification)">
-                                    {{ game.qualification != null ? game.qualification : "tbd" }}
-                                </p>
-                                <span class="ratingText" *ngIf="game.qualification !== null">
-                                    {{ getRatingText(game.qualification) }}
-                                </span>
-                            </div>
-                        </div>
-                    </a>
+            <!-- Answer options -->
+            <div class="optionsContainer">
+                <div *ngFor="let option of currentQuizQuestion?.options" (click)="checkAnswer(option)"
+                    class="optionLabel"
+                    [class.correct]="selectedOption === currentQuizQuestion?.answer && option === currentQuizQuestion?.answer"
+                    [class.incorrect]="selectedOption !== currentQuizQuestion?.answer && selectedOption === option">
+                    {{ option }}
                 </div>
             </div>
         </div>

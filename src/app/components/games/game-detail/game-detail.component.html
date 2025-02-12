@@ -1,33 +1,40 @@
+<!-- MAIN GAME -->
 <div class="gameContainer">
+
+  <!-- Video game trailer -->
   <div class="videoContainer" *ngIf="game?.video">
     <iframe [src]="game?.video + '?autoplay=1&mute=1' | safeResourceUrl" frameborder="0" allowfullscreen
       allow="autoplay" loading="lazy"></iframe>
   </div>
 
+  <!-- Game details -->
   <div class="gameDetailsContainer">
     <h1>{{ game?.title }}</h1>
     <p [innerHTML]="game?.text[currentLanguage]"></p>
-    <p class="highlight">Lanzamiento: {{ game?.release }}</p>
+    <p class="highlight">{{ "GAMES.RELEASE" | i18next }} {{ game?.release }}</p>
+
     <div class="consolesContainer">
-      <p class="highlight">Plataformas:</p>
+      <p class="highlight">{{ "GAMES.CONSOLES" | i18next }}</p>
       <div *ngFor="let console of game?.consoles" class="d-flex">
         <p class="highlight">{{ console }}</p>
-        <i class="fa-brands fa-{{ console.toString() | lowercase }}"></i>
+        <i class="fa-brands fa-{{ console | lowercase }}"></i>
         <i *ngIf="console == 'PC'" class="fa-solid fa-desktop"></i>
         <i *ngIf="console == 'Switch'" class="fa-solid fa-gamepad"></i>
       </div>
     </div>
+
     <p class="qualificationContainer" [class]="getRatingClass(game?.qualification)">
-      Nota: {{ game?.qualification != null ? game?.qualification : "tbd" }}
+      {{ "GAMES.RATING" | i18next }} {{ game?.qualification ?? "tbd" }}
     </p>
     <button class="shopButton" (click)="redirectToPurchase()">
-      Comprar Ahora
+      {{ "GAMES.BUY" | i18next }}
     </button>
   </div>
 </div>
 
-<div class="imagesContainer" *ngIf="game?.screenshots.length > 0">
-  <h2 class="sectionTitle"><i class="fa-solid fa-images"></i> Imágenes</h2>
+<!-- SCREENSHOTS SECTION -->
+<div class="imagesContainer" *ngIf="game?.screenshots.length">
+  <h2 class="sectionTitle"><i class="fa-solid fa-images"></i>{{ "GAMES.IMAGES" | i18next }}</h2>
   <hr />
   <div class="images">
     <img *ngFor="let image of game?.screenshots; let i = index" [src]="image" alt="{{ game?.title }} screenshot"
@@ -35,6 +42,7 @@
   </div>
 </div>
 
+<!-- LIGHTBOX: DISPLAYS SELECTED SCREENSHOT IN FULLSCREEN MODE -->
 <div class="lightboxContainer" *ngIf="showLightbox">
   <div class="lightboxContent">
     <span class="close" (click)="closeLightbox()"></span>

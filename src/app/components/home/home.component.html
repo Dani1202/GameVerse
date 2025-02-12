@@ -1,76 +1,74 @@
-<div class="homeGameVerse">
-
-  <!--NEWS-->
-  <div class="newsSection">
-    <div class="newsTitleWrapper">
-      <h2 class="newsTitle">{{ 'HOME.TITLE_NEWS' | i18next }}</h2>
-    </div>
-    <div class="newsGrid">
-      <div class="newsCard" *ngFor="let news of newsItems">
-        <a [routerLink]="['/news', formatURL(news.title['es'])]">
-          <div class="newsImage" [ngStyle]="{'background-image': 'url(' + news.img + ')'}"></div>
-          <div class="newsContent">
-            <h3>{{ news.title[currentLanguage] }}</h3>
-          </div>
-        </a>
-      </div>
-    </div>
+<!--NEWS-->
+<div class="newsSection">
+  <div class="newsTitleWrapper">
+    <h2 class="newsTitle">{{ 'HOME.TITLE_NEWS' | i18next }}</h2>
   </div>
-
-  <!--TOP GAMES-->
-  <div class="topGamesSection">
-    <h2 class="sectionTitle">{{'HOME.TITLE_GAMES' | i18next }}</h2>
-    <p class="sectionDescription">{{ 'HOME.DESCRIPTION' | i18next }}</p>
-
-    <div id="topGamesCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item" *ngFor="let game of top100Games; index as i"
-          [class]="i === currentGameIndex ? 'active' : 'inactive'" data-bs-interval="1000">
-          <div *ngIf="i % 4 === 0" class="group-container d-flex">
-            <div *ngFor="let innerGame of top100Games?.slice(i, i + 4); index as j" class="divTopGames">
-              <a [routerLink]="['/games', formatURL(innerGame.title)]">
-                <div class="gameContainer">
-                  <span class="gameIndex">{{ i + j + 1 }}</span>
-                  <img src="{{ innerGame.img }}" />
-                  <div class="overlay">
-                    <h3>{{ innerGame.title }}</h3>
-                    <p>{{ innerGame.shortDescription[currentLanguage] | truncateText: 150 }}</p>
-                    <p class="ratingBox" [class]="getRatingClass(innerGame.qualification)">
-                      {{ innerGame.qualification }}
-                    </p>
-                  </div>
-                </div>
-                <div class="consoleButtons">
-                  <a *ngFor="let console of innerGame.consoles" routerLink="">
-                    <img class="consoleBtn" src="assets/images/consoles/{{ console }}.png" />
-                  </a>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#topGamesCarousel" data-bs-slide="prev"
-        (click)="prevGames()">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#topGamesCarousel" data-bs-slide="next"
-        (click)="nextGames()">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
-    </div>
-  </div>
-
-  <!--BUTTONS-->
-  <div class="boxContainer">
-    <div class="box" *ngFor="let button of buttonsHome; let i = index">
-      <a [routerLink]="i === 0 ? '/tables' : button.url">
-        <h2>{{ button.title[currentLanguage] }}</h2>
-        <div class="content">
-          <img src="{{ button.img }}" class="circleImage" />
-          <p>{{ button.text[currentLanguage] }}</p>
+  <div class="newsGrid">
+    <div class="newsCard" *ngFor="let news of newsItems">
+      <a [routerLink]="['/news', formatURL(news.title['es'])]">
+        <div class="newsImage" [ngStyle]="{'background-image': 'url(' + news.img + ')'}"></div>
+        <div class="newsContent">
+          <h3>{{ news.title[currentLanguage] }}</h3>
         </div>
       </a>
     </div>
+  </div>
+</div>
+
+<!--TOP GAMES-->
+<div class="topGamesSection">
+  <h2 class="sectionTitle">{{'HOME.TITLE_GAMES' | i18next }}</h2>
+  <p class="sectionDescription">{{ 'HOME.DESCRIPTION' | i18next }}</p>
+
+  <div id="topGamesCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item" *ngFor="let game of top100Games; index as i"
+        [class]="i === currentGameIndex ? 'active' : 'inactive'" data-bs-interval="1000">
+
+        <div *ngIf="i % 4 === 0" class="group-container d-flex">
+          <div *ngFor="let innerGame of top100Games?.slice(i, i + 4); index as j" class="divTopGames">
+            <a [routerLink]="['/games', formatURL(innerGame.title)]">
+              <div class="gameContainer">
+                <span class="gameIndex">{{ i + j + 1 }}</span>
+                <img src="{{ innerGame.img }}" />
+                <div class="overlay">
+                  <h3>{{ innerGame.title }}</h3>
+                  <p>{{ innerGame.shortDescription[currentLanguage] | truncateText: 150 }}</p>
+                  <p class="ratingBox" [class]="getRatingClass(innerGame.qualification)">
+                    {{ innerGame.qualification }}
+                  </p>
+                </div>
+              </div>
+              <div class="consoleButtons">
+                <a *ngFor="let console of innerGame.consoles">
+                  <img class="consoleBtn" src="assets/images/consoles/{{ console }}.png" />
+                </a>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#topGamesCarousel" data-bs-slide="prev"
+      (click)="prevGames()">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#topGamesCarousel" data-bs-slide="next"
+      (click)="nextGames()">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</div>
+
+<!--BUTTONS-->
+<div class="boxContainer">
+  <div class="box" *ngFor="let button of buttonsHome; let i = index">
+    <a [routerLink]="i === 0 ? '/tables' : button.url">
+      <h2>{{ button.title[currentLanguage] }}</h2>
+      <div class="content">
+        <img src="{{ button.img }}" class="circleImage" />
+        <p>{{ button.text[currentLanguage] }}</p>
+      </div>
+    </a>
   </div>
 </div>

@@ -1,283 +1,282 @@
 {
-    "columns": [
-      "Título",
-      "Precio",
-      "Plataforma",
-      "Género",
-      "PEGI",
-      "Mes de salida"
-    ],
-    "games": [
-      {
-        "id": 1,
-        "title": "Pokémon Legends: Arceus",
-        "price": 59.99,
-        "platform": "Switch",
-        "genre": "Acción, Aventura",
-        "pegi": 7,
-        "releaseDate": "Enero"
-      },
-      {
-        "id": 2,
-        "title": "OlliOlli World",
-        "price": 29.99,
-        "platform": "PS5, Xbox, PC, Switch",
-        "genre": "Deportes, Acción",
-        "pegi": 12,
-        "releaseDate": "Febrero"
-      },
-      {
-        "id": 3,
-        "title": "Retro Bowl",
-        "price": 4.99,
-        "platform": "Switch",
-        "genre": "Deportes",
-        "pegi": 3,
-        "releaseDate": "Febrero"
-      },
-      {
-        "id": 4,
-        "title": "Horizon Forbidden West",
-        "price": 69.99,
-        "platform": "PS5",
-        "genre": "Acción, Aventura",
-        "pegi": 16,
-        "releaseDate": "Febrero"
-      },
-      {
-        "id": 5,
-        "title": "Elden Ring",
-        "price": 69.99,
-        "platform": "PS5, Xbox, PC",
-        "genre": "Acción",
-        "pegi": 16,
-        "releaseDate": "Febrero"
-      },
-      {
-        "id": 6,
-        "title": "Wanderer",
-        "price": 39.99,
-        "platform": "PS5, PC",
-        "genre": "Aventura, Puzles",
-        "pegi": 12,
-        "releaseDate": "Febrero"
-      },
-      {
-        "id": 7,
-        "title": "Gran Turismo 7",
-        "price": 69.99,
-        "platform": "PS5",
-        "genre": "Deportes",
-        "pegi": 3,
-        "releaseDate": "Marzo"
-      },
-      {
-        "id": 8,
-        "title": "Kirby y la tierra olvidada",
-        "price": 59.99,
-        "platform": "Switch",
-        "genre": "Aventura",
-        "pegi": 7,
-        "releaseDate": "Marzo"
-      },
-      {
-        "id": 9,
-        "title": "Patrick's Parabox",
-        "price": 19.99,
-        "platform": "PS5, PC, Switch",
-        "genre": "Aventura, Puzles",
-        "pegi": 3,
-        "releaseDate": "Marzo"
-      },
-      {
-        "id": 10,
-        "title": "Moss: Book II",
-        "price": 19.99,
-        "platform": "PS5, PC",
-        "genre": "Acción, Aventura, Puzles, VR",
-        "pegi": 7,
-        "releaseDate": "Marzo"
-      },
-      {
-        "id": 11,
-        "title": "MLB The Show 22",
-        "price": 59.99,
-        "platform": "PS5, Xbox, Switch",
-        "genre": "Deportes",
-        "pegi": 12,
-        "releaseDate": "Abril"
-      },
-      {
-        "id": 12,
-        "title": "Rogue Legacy 2",
-        "price": 24.99,
-        "platform": "PS5, Xbox, PC, Switch",
-        "genre": "Acción",
-        "pegi": 12,
-        "releaseDate": "Abril"
-      },
-      {
-        "id": 13,
-        "title": "Nintendo Switch Sports",
-        "price": 59.99,
-        "platform": "Switch",
-        "genre": "Deportes",
-        "pegi": 7,
-        "releaseDate": "Abril"
-      },
-      {
-        "id": 14,
-        "title": "V Rising",
-        "price": 34.99,
-        "platform": "PC",
-        "genre": "Acción, Aventura, Supervivencia",
-        "pegi": 16,
-        "releaseDate": "Mayo"
-      },
-      {
-        "id": 15,
-        "title": "Freshly Frosted",
-        "price": 9.99,
-        "platform": "PS5, Xbox, PC, Switch",
-        "genre": "Puzles",
-        "pegi": 3,
-        "releaseDate": "Junio"
-      },
-      {
-        "id": 16,
-        "title": "Neon White",
-        "price": 24.99,
-        "platform": "PS5, Xbox, PC, Switch",
-        "genre": "Acción, Aventura",
-        "pegi": 16,
-        "releaseDate": "Junio"
-      },
-      {
-        "id": 17,
-        "title": "Portal: Companion Collection",
-        "price": 19.99,
-        "platform": "Switch",
-        "genre": "Aventura, Puzles",
-        "pegi": 12,
-        "releaseDate": "Junio"
-      },
-      {
-        "id": 18,
-        "title": "Monster Hunter Rise: Sunbreak",
-        "price": 69.99,
-        "platform": "PS5, Xbox, PC, Switch",
-        "genre": "Acción, Aventura",
-        "pegi": 16,
-        "releaseDate": "Junio"
-      },
-      {
-        "id": 19,
-        "title": "F1 22",
-        "price": 69.99,
-        "platform": "PS5, Xbox, PC",
-        "genre": "Deportes",
-        "pegi": 3,
-        "releaseDate": "Julio"
-      },
-      {
-        "id": 20,
-        "title": "Stray",
-        "price": 29.99,
-        "platform": "PS5, Xbox, PC",
-        "genre": "Aventura, Puzles",
-        "pegi": 12,
-        "releaseDate": "Julio"
-      },
-      {
-        "id": 21,
-        "title": "Xenoblade Chronicles 3",
-        "price": 59.99,
-        "platform": "Switch",
-        "genre": "Acción, Aventura",
-        "pegi": 12,
-        "releaseDate": "Julio"
-      },
-      {
-        "id": 22,
-        "title": "Lost in Play",
-        "price": 19.99,
-        "platform": "PS5, PC, Switch",
-        "genre": "Aventura, Puzles",
-        "pegi": 7,
-        "releaseDate": "Agosto"
-      },
-      {
-        "id": 23,
-        "title": "NBA 2K23",
-        "price": 69.99,
-        "platform": "PS5, Xbox, PC, Switch",
-        "genre": "Deportes",
-        "pegi": 3,
-        "releaseDate": "Septiembre"
-      },
-      {
-        "id": 24,
-        "title": "Return to Monkey Island",
-        "price": 24.99,
-        "platform": "PS5, Xbox, PC, Switch",
-        "genre": "Aventura, Puzles",
-        "pegi": 12,
-        "releaseDate": "Septiembre"
-      },
-      {
-        "id": 25,
-        "title": "PGA Tour 2K23",
-        "price": 69.99,
-        "platform": "PS5, Xbox, PC",
-        "genre": "Deportes",
-        "pegi": 3,
-        "releaseDate": "Octubre"
-      },
-      {
-        "id": 26,
-        "title": "Bayonetta 3",
-        "price": 59.99,
-        "platform": "Switch",
-        "genre": "Acción",
-        "pegi": 18,
-        "releaseDate": "Octubre"
-      },
-      {
-        "id": 27,
-        "title": "God of War Ragnarök",
-        "price": 69.99,
-        "platform": "PS5, PC",
-        "genre": "Acción, Aventura",
-        "pegi": 18,
-        "releaseDate": "Noviembre"
-      },
-      {
-        "id": 28,
-        "title": "Chained Echoes",
-        "price": 24.99,
-        "platform": "PS5, Xbox, PC, Switch",
-        "genre": "Acción, Aventura",
-        "pegi": 12,
-        "releaseDate": "Diciembre"
-      },
-      {
-        "id": 29,
-        "title": "Dwarf Fortress",
-        "price": 28.99,
-        "platform": "PC",
-        "genre": "Supervivencia",
-        "pegi": 12,
-        "releaseDate": "Diciembre"
-      },
-      {
-        "id": 30,
-        "title": "Hello Neighbor 2",
-        "price": 39.99,
-        "platform": "PS5, Xbox, PC, Switch",
-        "genre": "Acción, Aventura",
-        "pegi": 12,
-        "releaseDate": "Diciembre"
-      }
-    ]
-  }
-  
+  "columns": [
+    "Título",
+    "Precio",
+    "Plataforma",
+    "Género",
+    "PEGI",
+    "Mes de salida"
+  ],
+  "games": [
+    {
+      "id": 1,
+      "title": "Pokémon Legends: Arceus",
+      "price": 59.99,
+      "platform": "Switch",
+      "genre": "Acción, Aventura",
+      "pegi": 7,
+      "releaseDate": "Enero"
+    },
+    {
+      "id": 2,
+      "title": "OlliOlli World",
+      "price": 29.99,
+      "platform": "PS5, Xbox, PC, Switch",
+      "genre": "Deportes, Acción",
+      "pegi": 12,
+      "releaseDate": "Febrero"
+    },
+    {
+      "id": 3,
+      "title": "Retro Bowl",
+      "price": 4.99,
+      "platform": "Switch",
+      "genre": "Deportes",
+      "pegi": 3,
+      "releaseDate": "Febrero"
+    },
+    {
+      "id": 4,
+      "title": "Horizon Forbidden West",
+      "price": 69.99,
+      "platform": "PS5",
+      "genre": "Acción, Aventura",
+      "pegi": 16,
+      "releaseDate": "Febrero"
+    },
+    {
+      "id": 5,
+      "title": "Elden Ring",
+      "price": 69.99,
+      "platform": "PS5, Xbox, PC",
+      "genre": "Acción",
+      "pegi": 16,
+      "releaseDate": "Febrero"
+    },
+    {
+      "id": 6,
+      "title": "Wanderer",
+      "price": 39.99,
+      "platform": "PS5, PC",
+      "genre": "Aventura, Puzles",
+      "pegi": 12,
+      "releaseDate": "Febrero"
+    },
+    {
+      "id": 7,
+      "title": "Gran Turismo 7",
+      "price": 69.99,
+      "platform": "PS5",
+      "genre": "Deportes",
+      "pegi": 3,
+      "releaseDate": "Marzo"
+    },
+    {
+      "id": 8,
+      "title": "Kirby y la tierra olvidada",
+      "price": 59.99,
+      "platform": "Switch",
+      "genre": "Aventura",
+      "pegi": 7,
+      "releaseDate": "Marzo"
+    },
+    {
+      "id": 9,
+      "title": "Patrick's Parabox",
+      "price": 19.99,
+      "platform": "PS5, PC, Switch",
+      "genre": "Aventura, Puzles",
+      "pegi": 3,
+      "releaseDate": "Marzo"
+    },
+    {
+      "id": 10,
+      "title": "Moss: Book II",
+      "price": 19.99,
+      "platform": "PS5, PC",
+      "genre": "Acción, Aventura, Puzles, VR",
+      "pegi": 7,
+      "releaseDate": "Marzo"
+    },
+    {
+      "id": 11,
+      "title": "MLB The Show 22",
+      "price": 59.99,
+      "platform": "PS5, Xbox, Switch",
+      "genre": "Deportes",
+      "pegi": 12,
+      "releaseDate": "Abril"
+    },
+    {
+      "id": 12,
+      "title": "Rogue Legacy 2",
+      "price": 24.99,
+      "platform": "PS5, Xbox, PC, Switch",
+      "genre": "Acción",
+      "pegi": 12,
+      "releaseDate": "Abril"
+    },
+    {
+      "id": 13,
+      "title": "Nintendo Switch Sports",
+      "price": 59.99,
+      "platform": "Switch",
+      "genre": "Deportes",
+      "pegi": 7,
+      "releaseDate": "Abril"
+    },
+    {
+      "id": 14,
+      "title": "V Rising",
+      "price": 34.99,
+      "platform": "PC",
+      "genre": "Acción, Aventura, Supervivencia",
+      "pegi": 16,
+      "releaseDate": "Mayo"
+    },
+    {
+      "id": 15,
+      "title": "Freshly Frosted",
+      "price": 9.99,
+      "platform": "PS5, Xbox, PC, Switch",
+      "genre": "Puzles",
+      "pegi": 3,
+      "releaseDate": "Junio"
+    },
+    {
+      "id": 16,
+      "title": "Neon White",
+      "price": 24.99,
+      "platform": "PS5, Xbox, PC, Switch",
+      "genre": "Acción, Aventura",
+      "pegi": 16,
+      "releaseDate": "Junio"
+    },
+    {
+      "id": 17,
+      "title": "Portal: Companion Collection",
+      "price": 19.99,
+      "platform": "Switch",
+      "genre": "Aventura, Puzles",
+      "pegi": 12,
+      "releaseDate": "Junio"
+    },
+    {
+      "id": 18,
+      "title": "Monster Hunter Rise: Sunbreak",
+      "price": 69.99,
+      "platform": "PS5, Xbox, PC, Switch",
+      "genre": "Acción, Aventura",
+      "pegi": 16,
+      "releaseDate": "Junio"
+    },
+    {
+      "id": 19,
+      "title": "F1 22",
+      "price": 69.99,
+      "platform": "PS5, Xbox, PC",
+      "genre": "Deportes",
+      "pegi": 3,
+      "releaseDate": "Julio"
+    },
+    {
+      "id": 20,
+      "title": "Stray",
+      "price": 29.99,
+      "platform": "PS5, Xbox, PC",
+      "genre": "Aventura, Puzles",
+      "pegi": 12,
+      "releaseDate": "Julio"
+    },
+    {
+      "id": 21,
+      "title": "Xenoblade Chronicles 3",
+      "price": 59.99,
+      "platform": "Switch",
+      "genre": "Acción, Aventura",
+      "pegi": 12,
+      "releaseDate": "Julio"
+    },
+    {
+      "id": 22,
+      "title": "Lost in Play",
+      "price": 19.99,
+      "platform": "PS5, PC, Switch",
+      "genre": "Aventura, Puzles",
+      "pegi": 7,
+      "releaseDate": "Agosto"
+    },
+    {
+      "id": 23,
+      "title": "NBA 2K23",
+      "price": 69.99,
+      "platform": "PS5, Xbox, PC, Switch",
+      "genre": "Deportes",
+      "pegi": 3,
+      "releaseDate": "Septiembre"
+    },
+    {
+      "id": 24,
+      "title": "Return to Monkey Island",
+      "price": 24.99,
+      "platform": "PS5, Xbox, PC, Switch",
+      "genre": "Aventura, Puzles",
+      "pegi": 12,
+      "releaseDate": "Septiembre"
+    },
+    {
+      "id": 25,
+      "title": "PGA Tour 2K23",
+      "price": 69.99,
+      "platform": "PS5, Xbox, PC",
+      "genre": "Deportes",
+      "pegi": 3,
+      "releaseDate": "Octubre"
+    },
+    {
+      "id": 26,
+      "title": "Bayonetta 3",
+      "price": 59.99,
+      "platform": "Switch",
+      "genre": "Acción",
+      "pegi": 18,
+      "releaseDate": "Octubre"
+    },
+    {
+      "id": 27,
+      "title": "God of War Ragnarök",
+      "price": 69.99,
+      "platform": "PS5, PC",
+      "genre": "Acción, Aventura",
+      "pegi": 18,
+      "releaseDate": "Noviembre"
+    },
+    {
+      "id": 28,
+      "title": "Chained Echoes",
+      "price": 24.99,
+      "platform": "PS5, Xbox, PC, Switch",
+      "genre": "Acción, Aventura",
+      "pegi": 12,
+      "releaseDate": "Diciembre"
+    },
+    {
+      "id": 29,
+      "title": "Dwarf Fortress",
+      "price": 28.99,
+      "platform": "PC",
+      "genre": "Supervivencia",
+      "pegi": 12,
+      "releaseDate": "Diciembre"
+    },
+    {
+      "id": 30,
+      "title": "Hello Neighbor 2",
+      "price": 39.99,
+      "platform": "PS5, Xbox, PC, Switch",
+      "genre": "Acción, Aventura",
+      "pegi": 12,
+      "releaseDate": "Diciembre"
+    }
+  ]
+}

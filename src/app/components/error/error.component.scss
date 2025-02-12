@@ -20,19 +20,18 @@
 }
 
 .buttonContainer button {
-    font-size: 16px;
     padding: 10px 20px;
     margin-right: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #59759C;
+    background-color: var(--color-base);
     color: #fff;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .buttonContainer button:hover {
-    background-color: #f00;
+    background-color: var(--color-secondary);
     color: #fff;
 }
 
